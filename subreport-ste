@@ -2,7 +2,7 @@
 
 \---------------------- /home/jcalderon/NewFolder/prd_scripts/jun8_prd_451-563cm_srce_rns/jun8_451cm_source_all_.dat ----------------------
  Date:	14/6/2016
- time:	'10:13:30'
+ time:	'10:39:35'
 \--------------Source Sim Time	20.0 ----------
 Name	ste
 Alarm Setting	9.8
@@ -20,7 +20,7 @@ Probability to Alarm	0.56791897881\ \ \ \ \ \ \ \ \ \  \ \ \ \ \ \ \ \ \ \ \ \ \
 
 \---------------------- /home/jcalderon/NewFolder/prd_scripts/jun8_prd_451-563cm_srce_rns/jun8_488cm_source_all_.dat ----------------------
  Date:	14/6/2016
- time:	'10:13:31'
+ time:	'10:39:35'
 \--------------Source Sim Time	20.0 ----------
 Name	ste
 Alarm Setting	9.8
@@ -38,7 +38,7 @@ Probability to Alarm	0.360477360829\ \ \ \ \ \ \ \ \ \  \ \ \ \ \ \ \ \ \ \ \ \ 
 
 \---------------------- /home/jcalderon/NewFolder/prd_scripts/jun8_prd_451-563cm_srce_rns/jun8_525cm_source_all_.dat ----------------------
  Date:	14/6/2016
- time:	'10:13:31'
+ time:	'10:39:36'
 \--------------Source Sim Time	20.0 ----------
 Name	ste
 Alarm Setting	9.8
@@ -56,7 +56,7 @@ Probability to Alarm	0.193591487327\ \ \ \ \ \ \ \ \ \  \ \ \ \ \ \ \ \ \ \ \ \ 
 
 \---------------------- /home/jcalderon/NewFolder/prd_scripts/jun8_prd_451-563cm_srce_rns/jun8_20sec__563cm_source_all_.dat ----------------------
  Date:	14/6/2016
- time:	'10:13:31'
+ time:	'10:39:36'
 \--------------Source Sim Time	20.0 ----------
 Name	ste
 Alarm Setting	9.8
@@ -74,7 +74,7 @@ Probability to Alarm	0.152551344158\ \ \ \ \ \ \ \ \ \  \ \ \ \ \ \ \ \ \ \ \ \ 
 
 \---------------------- /home/jcalderon/NewFolder/prd_scripts/jun8_prd_451-563cm_srce_rns/jun8_451cm_source_all_.dat ----------------------
  Date:	14/6/2016
- time:	'10:15:57'
+ time:	'10:39:52'
 \--------------Source Sim Time	20.0 ----------
 Name	ste
 Alarm Setting	9.8
@@ -92,7 +92,7 @@ Probability to Alarm	0.56791897881\ \ \ \ \ \ \ \ \ \  \ \ \ \ \ \ \ \ \ \ \ \ \
 
 \---------------------- /home/jcalderon/NewFolder/prd_scripts/jun8_prd_451-563cm_srce_rns/jun8_488cm_source_all_.dat ----------------------
  Date:	14/6/2016
- time:	'10:15:58'
+ time:	'10:39:52'
 \--------------Source Sim Time	20.0 ----------
 Name	ste
 Alarm Setting	9.8
@@ -110,7 +110,7 @@ Probability to Alarm	0.360477360829\ \ \ \ \ \ \ \ \ \  \ \ \ \ \ \ \ \ \ \ \ \ 
 
 \---------------------- /home/jcalderon/NewFolder/prd_scripts/jun8_prd_451-563cm_srce_rns/jun8_525cm_source_all_.dat ----------------------
  Date:	14/6/2016
- time:	'10:15:58'
+ time:	'10:39:52'
 \--------------Source Sim Time	20.0 ----------
 Name	ste
 Alarm Setting	9.8
@@ -128,7 +128,463 @@ Probability to Alarm	0.193591487327\ \ \ \ \ \ \ \ \ \  \ \ \ \ \ \ \ \ \ \ \ \ 
 
 \---------------------- /home/jcalderon/NewFolder/prd_scripts/jun8_prd_451-563cm_srce_rns/jun8_20sec__563cm_source_all_.dat ----------------------
  Date:	14/6/2016
- time:	'10:15:58'
+ time:	'10:39:52'
+\--------------Source Sim Time	20.0 ----------
+Name	ste
+Alarm Setting	9.8
+Micro Rad Per Hr	6.8641293993
+Sigma Rad	0.437766536834
+Source Hits Per Sec	17.5
+Source Sigma Hit Rate	0.935414346693
+Background Hit Rate	15.14
+Sigma Background Hit Rate	3.89101529167
+Combined Hit Rate	32.64
+Sigma Combined Hit Rate	4.00187456075
+Sigma Above Background	4.49754079288
+Hits Required to alarm	38.1319498584
+Probability to Alarm	0.152551344158
+ \ \ \ \ \ \ \ \ \  \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 
+
+\---------------------- /home/jcalderon/NewFolder/prd_scripts/jun8_prd_451-563cm_srce_rns/jun8_451cm_source_all_.dat ----------------------
+ Date:	14/6/2016
+ time:	'11:16:53'
+\--------------Source Sim Time	20.0 ----------
+Name	ste
+Alarm Setting	9.8
+Micro Rad Per Hr	10.0453092958
+Sigma Rad	0.544231339096
+Source Hits Per Sec	24.6
+Source Sigma Hit Rate	1.10905365064
+Background Hit Rate	15.14
+Sigma Background Hit Rate	3.89101529167
+Combined Hit Rate	39.74
+Sigma Combined Hit Rate	4.04598566483
+Sigma Above Background	6.32225734313
+Hits Required to alarm	38.1319498584
+Probability to Alarm	0.56791897881
+ \ \ \ \ \ \ \ \ \  \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 
+
+\---------------------- /home/jcalderon/NewFolder/prd_scripts/jun8_prd_451-563cm_srce_rns/jun8_488cm_source_all_.dat ----------------------
+ Date:	14/6/2016
+ time:	'11:16:53'
+\--------------Source Sim Time	20.0 ----------
+Name	ste
+Alarm Setting	9.8
+Micro Rad Per Hr	9.01007110684
+Sigma Rad	0.518893682089
+Source Hits Per Sec	21.35
+Source Sigma Hit Rate	1.03319891599
+Background Hit Rate	15.14
+Sigma Background Hit Rate	3.89101529167
+Combined Hit Rate	36.49
+Sigma Combined Hit Rate	4.02585394668
+Sigma Above Background	5.48699976731
+Hits Required to alarm	38.1319498584
+Probability to Alarm	0.360477360829
+ \ \ \ \ \ \ \ \ \  \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 
+
+\---------------------- /home/jcalderon/NewFolder/prd_scripts/jun8_prd_451-563cm_srce_rns/jun8_525cm_source_all_.dat ----------------------
+ Date:	14/6/2016
+ time:	'11:16:53'
+\--------------Source Sim Time	20.0 ----------
+Name	ste
+Alarm Setting	9.8
+Micro Rad Per Hr	7.19491828552
+Sigma Rad	0.442538518216
+Source Hits Per Sec	18.4
+Source Sigma Hit Rate	0.959166304663
+Background Hit Rate	15.14
+Sigma Background Hit Rate	3.89101529167
+Combined Hit Rate	33.54
+Sigma Combined Hit Rate	4.0074929819
+Sigma Above Background	4.7288428908
+Hits Required to alarm	38.1319498584
+Probability to Alarm	0.193591487327
+ \ \ \ \ \ \ \ \ \  \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 
+
+\---------------------- /home/jcalderon/NewFolder/prd_scripts/jun8_prd_451-563cm_srce_rns/jun8_20sec__563cm_source_all_.dat ----------------------
+ Date:	14/6/2016
+ time:	'11:16:54'
+\--------------Source Sim Time	20.0 ----------
+Name	ste
+Alarm Setting	9.8
+Micro Rad Per Hr	6.8641293993
+Sigma Rad	0.437766536834
+Source Hits Per Sec	17.5
+Source Sigma Hit Rate	0.935414346693
+Background Hit Rate	15.14
+Sigma Background Hit Rate	3.89101529167
+Combined Hit Rate	32.64
+Sigma Combined Hit Rate	4.00187456075
+Sigma Above Background	4.49754079288
+Hits Required to alarm	38.1319498584
+Probability to Alarm	0.152551344158
+ \ \ \ \ \ \ \ \ \  \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 
+
+\---------------------- /home/jcalderon/NewFolder/prd_scripts/jun8_prd_451-563cm_srce_rns/jun8_451cm_source_all_.dat ----------------------
+ Date:	14/6/2016
+ time:	'11:17:08'
+\--------------Source Sim Time	20.0 ----------
+Name	ste
+Alarm Setting	9.8
+Micro Rad Per Hr	10.0453092958
+Sigma Rad	0.544231339096
+Source Hits Per Sec	24.6
+Source Sigma Hit Rate	1.10905365064
+Background Hit Rate	15.14
+Sigma Background Hit Rate	3.89101529167
+Combined Hit Rate	39.74
+Sigma Combined Hit Rate	4.04598566483
+Sigma Above Background	6.32225734313
+Hits Required to alarm	38.1319498584
+Probability to Alarm	0.56791897881
+ \ \ \ \ \ \ \ \ \  \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 
+
+\---------------------- /home/jcalderon/NewFolder/prd_scripts/jun8_prd_451-563cm_srce_rns/jun8_488cm_source_all_.dat ----------------------
+ Date:	14/6/2016
+ time:	'11:17:08'
+\--------------Source Sim Time	20.0 ----------
+Name	ste
+Alarm Setting	9.8
+Micro Rad Per Hr	9.01007110684
+Sigma Rad	0.518893682089
+Source Hits Per Sec	21.35
+Source Sigma Hit Rate	1.03319891599
+Background Hit Rate	15.14
+Sigma Background Hit Rate	3.89101529167
+Combined Hit Rate	36.49
+Sigma Combined Hit Rate	4.02585394668
+Sigma Above Background	5.48699976731
+Hits Required to alarm	38.1319498584
+Probability to Alarm	0.360477360829
+ \ \ \ \ \ \ \ \ \  \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 
+
+\---------------------- /home/jcalderon/NewFolder/prd_scripts/jun8_prd_451-563cm_srce_rns/jun8_525cm_source_all_.dat ----------------------
+ Date:	14/6/2016
+ time:	'11:17:08'
+\--------------Source Sim Time	20.0 ----------
+Name	ste
+Alarm Setting	9.8
+Micro Rad Per Hr	7.19491828552
+Sigma Rad	0.442538518216
+Source Hits Per Sec	18.4
+Source Sigma Hit Rate	0.959166304663
+Background Hit Rate	15.14
+Sigma Background Hit Rate	3.89101529167
+Combined Hit Rate	33.54
+Sigma Combined Hit Rate	4.0074929819
+Sigma Above Background	4.7288428908
+Hits Required to alarm	38.1319498584
+Probability to Alarm	0.193591487327
+ \ \ \ \ \ \ \ \ \  \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 
+
+\---------------------- /home/jcalderon/NewFolder/prd_scripts/jun8_prd_451-563cm_srce_rns/jun8_20sec__563cm_source_all_.dat ----------------------
+ Date:	14/6/2016
+ time:	'11:17:09'
+\--------------Source Sim Time	20.0 ----------
+Name	ste
+Alarm Setting	9.8
+Micro Rad Per Hr	6.8641293993
+Sigma Rad	0.437766536834
+Source Hits Per Sec	17.5
+Source Sigma Hit Rate	0.935414346693
+Background Hit Rate	15.14
+Sigma Background Hit Rate	3.89101529167
+Combined Hit Rate	32.64
+Sigma Combined Hit Rate	4.00187456075
+Sigma Above Background	4.49754079288
+Hits Required to alarm	38.1319498584
+Probability to Alarm	0.152551344158
+ \ \ \ \ \ \ \ \ \  \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 
+
+\---------------------- /home/jcalderon/NewFolder/prd_scripts/jun8_prd_451-563cm_srce_rns/jun8_451cm_source_all_.dat ----------------------
+ Date:	14/6/2016
+ time:	'11:18:09'
+\--------------Source Sim Time	20.0 ----------
+Name	ste
+Alarm Setting	9.8
+Micro Rad Per Hr	10.0453092958
+Sigma Rad	0.544231339096
+Source Hits Per Sec	24.6
+Source Sigma Hit Rate	1.10905365064
+Background Hit Rate	15.14
+Sigma Background Hit Rate	3.89101529167
+Combined Hit Rate	39.74
+Sigma Combined Hit Rate	4.04598566483
+Sigma Above Background	6.32225734313
+Hits Required to alarm	38.1319498584
+Probability to Alarm	0.56791897881
+ \ \ \ \ \ \ \ \ \  \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 
+
+\---------------------- /home/jcalderon/NewFolder/prd_scripts/jun8_prd_451-563cm_srce_rns/jun8_488cm_source_all_.dat ----------------------
+ Date:	14/6/2016
+ time:	'11:18:09'
+\--------------Source Sim Time	20.0 ----------
+Name	ste
+Alarm Setting	9.8
+Micro Rad Per Hr	9.01007110684
+Sigma Rad	0.518893682089
+Source Hits Per Sec	21.35
+Source Sigma Hit Rate	1.03319891599
+Background Hit Rate	15.14
+Sigma Background Hit Rate	3.89101529167
+Combined Hit Rate	36.49
+Sigma Combined Hit Rate	4.02585394668
+Sigma Above Background	5.48699976731
+Hits Required to alarm	38.1319498584
+Probability to Alarm	0.360477360829
+ \ \ \ \ \ \ \ \ \  \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 
+
+\---------------------- /home/jcalderon/NewFolder/prd_scripts/jun8_prd_451-563cm_srce_rns/jun8_525cm_source_all_.dat ----------------------
+ Date:	14/6/2016
+ time:	'11:18:09'
+\--------------Source Sim Time	20.0 ----------
+Name	ste
+Alarm Setting	9.8
+Micro Rad Per Hr	7.19491828552
+Sigma Rad	0.442538518216
+Source Hits Per Sec	18.4
+Source Sigma Hit Rate	0.959166304663
+Background Hit Rate	15.14
+Sigma Background Hit Rate	3.89101529167
+Combined Hit Rate	33.54
+Sigma Combined Hit Rate	4.0074929819
+Sigma Above Background	4.7288428908
+Hits Required to alarm	38.1319498584
+Probability to Alarm	0.193591487327
+ \ \ \ \ \ \ \ \ \  \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 
+
+\---------------------- /home/jcalderon/NewFolder/prd_scripts/jun8_prd_451-563cm_srce_rns/jun8_20sec__563cm_source_all_.dat ----------------------
+ Date:	14/6/2016
+ time:	'11:18:09'
+\--------------Source Sim Time	20.0 ----------
+Name	ste
+Alarm Setting	9.8
+Micro Rad Per Hr	6.8641293993
+Sigma Rad	0.437766536834
+Source Hits Per Sec	17.5
+Source Sigma Hit Rate	0.935414346693
+Background Hit Rate	15.14
+Sigma Background Hit Rate	3.89101529167
+Combined Hit Rate	32.64
+Sigma Combined Hit Rate	4.00187456075
+Sigma Above Background	4.49754079288
+Hits Required to alarm	38.1319498584
+Probability to Alarm	0.152551344158
+ \ \ \ \ \ \ \ \ \  \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 
+
+\---------------------- /home/jcalderon/NewFolder/prd_scripts/jun8_prd_451-563cm_srce_rns/jun8_451cm_source_all_.dat ----------------------
+ Date:	14/6/2016
+ time:	'11:18:37'
+\--------------Source Sim Time	20.0 ----------
+Name	ste
+Alarm Setting	9.8
+Micro Rad Per Hr	10.0453092958
+Sigma Rad	0.544231339096
+Source Hits Per Sec	24.6
+Source Sigma Hit Rate	1.10905365064
+Background Hit Rate	15.14
+Sigma Background Hit Rate	3.89101529167
+Combined Hit Rate	39.74
+Sigma Combined Hit Rate	4.04598566483
+Sigma Above Background	6.32225734313
+Hits Required to alarm	38.1319498584
+Probability to Alarm	0.56791897881
+ \ \ \ \ \ \ \ \ \  \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 
+
+\---------------------- /home/jcalderon/NewFolder/prd_scripts/jun8_prd_451-563cm_srce_rns/jun8_488cm_source_all_.dat ----------------------
+ Date:	14/6/2016
+ time:	'11:18:37'
+\--------------Source Sim Time	20.0 ----------
+Name	ste
+Alarm Setting	9.8
+Micro Rad Per Hr	9.01007110684
+Sigma Rad	0.518893682089
+Source Hits Per Sec	21.35
+Source Sigma Hit Rate	1.03319891599
+Background Hit Rate	15.14
+Sigma Background Hit Rate	3.89101529167
+Combined Hit Rate	36.49
+Sigma Combined Hit Rate	4.02585394668
+Sigma Above Background	5.48699976731
+Hits Required to alarm	38.1319498584
+Probability to Alarm	0.360477360829
+ \ \ \ \ \ \ \ \ \  \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 
+
+\---------------------- /home/jcalderon/NewFolder/prd_scripts/jun8_prd_451-563cm_srce_rns/jun8_525cm_source_all_.dat ----------------------
+ Date:	14/6/2016
+ time:	'11:18:38'
+\--------------Source Sim Time	20.0 ----------
+Name	ste
+Alarm Setting	9.8
+Micro Rad Per Hr	7.19491828552
+Sigma Rad	0.442538518216
+Source Hits Per Sec	18.4
+Source Sigma Hit Rate	0.959166304663
+Background Hit Rate	15.14
+Sigma Background Hit Rate	3.89101529167
+Combined Hit Rate	33.54
+Sigma Combined Hit Rate	4.0074929819
+Sigma Above Background	4.7288428908
+Hits Required to alarm	38.1319498584
+Probability to Alarm	0.193591487327
+ \ \ \ \ \ \ \ \ \  \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 
+
+\---------------------- /home/jcalderon/NewFolder/prd_scripts/jun8_prd_451-563cm_srce_rns/jun8_20sec__563cm_source_all_.dat ----------------------
+ Date:	14/6/2016
+ time:	'11:18:38'
+\--------------Source Sim Time	20.0 ----------
+Name	ste
+Alarm Setting	9.8
+Micro Rad Per Hr	6.8641293993
+Sigma Rad	0.437766536834
+Source Hits Per Sec	17.5
+Source Sigma Hit Rate	0.935414346693
+Background Hit Rate	15.14
+Sigma Background Hit Rate	3.89101529167
+Combined Hit Rate	32.64
+Sigma Combined Hit Rate	4.00187456075
+Sigma Above Background	4.49754079288
+Hits Required to alarm	38.1319498584
+Probability to Alarm	0.152551344158
+ \ \ \ \ \ \ \ \ \  \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 
+
+\---------------------- /home/jcalderon/NewFolder/prd_scripts/jun8_prd_451-563cm_srce_rns/jun8_451cm_source_all_.dat ----------------------
+ Date:	14/6/2016
+ time:	'11:24:09'
+\--------------Source Sim Time	20.0 ----------
+Name	ste
+Alarm Setting	9.8
+Micro Rad Per Hr	10.0453092958
+Sigma Rad	0.544231339096
+Source Hits Per Sec	24.6
+Source Sigma Hit Rate	1.10905365064
+Background Hit Rate	15.14
+Sigma Background Hit Rate	3.89101529167
+Combined Hit Rate	39.74
+Sigma Combined Hit Rate	4.04598566483
+Sigma Above Background	6.32225734313
+Hits Required to alarm	38.1319498584
+Probability to Alarm	0.56791897881
+ \ \ \ \ \ \ \ \ \  \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 
+
+\---------------------- /home/jcalderon/NewFolder/prd_scripts/jun8_prd_451-563cm_srce_rns/jun8_488cm_source_all_.dat ----------------------
+ Date:	14/6/2016
+ time:	'11:24:09'
+\--------------Source Sim Time	20.0 ----------
+Name	ste
+Alarm Setting	9.8
+Micro Rad Per Hr	9.01007110684
+Sigma Rad	0.518893682089
+Source Hits Per Sec	21.35
+Source Sigma Hit Rate	1.03319891599
+Background Hit Rate	15.14
+Sigma Background Hit Rate	3.89101529167
+Combined Hit Rate	36.49
+Sigma Combined Hit Rate	4.02585394668
+Sigma Above Background	5.48699976731
+Hits Required to alarm	38.1319498584
+Probability to Alarm	0.360477360829
+ \ \ \ \ \ \ \ \ \  \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 
+
+\---------------------- /home/jcalderon/NewFolder/prd_scripts/jun8_prd_451-563cm_srce_rns/jun8_525cm_source_all_.dat ----------------------
+ Date:	14/6/2016
+ time:	'11:24:09'
+\--------------Source Sim Time	20.0 ----------
+Name	ste
+Alarm Setting	9.8
+Micro Rad Per Hr	7.19491828552
+Sigma Rad	0.442538518216
+Source Hits Per Sec	18.4
+Source Sigma Hit Rate	0.959166304663
+Background Hit Rate	15.14
+Sigma Background Hit Rate	3.89101529167
+Combined Hit Rate	33.54
+Sigma Combined Hit Rate	4.0074929819
+Sigma Above Background	4.7288428908
+Hits Required to alarm	38.1319498584
+Probability to Alarm	0.193591487327
+ \ \ \ \ \ \ \ \ \  \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 
+
+\---------------------- /home/jcalderon/NewFolder/prd_scripts/jun8_prd_451-563cm_srce_rns/jun8_20sec__563cm_source_all_.dat ----------------------
+ Date:	14/6/2016
+ time:	'11:24:10'
+\--------------Source Sim Time	20.0 ----------
+Name	ste
+Alarm Setting	9.8
+Micro Rad Per Hr	6.8641293993
+Sigma Rad	0.437766536834
+Source Hits Per Sec	17.5
+Source Sigma Hit Rate	0.935414346693
+Background Hit Rate	15.14
+Sigma Background Hit Rate	3.89101529167
+Combined Hit Rate	32.64
+Sigma Combined Hit Rate	4.00187456075
+Sigma Above Background	4.49754079288
+Hits Required to alarm	38.1319498584
+Probability to Alarm	0.152551344158
+ \ \ \ \ \ \ \ \ \  \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 
+
+\---------------------- /home/jcalderon/NewFolder/prd_scripts/jun8_prd_451-563cm_srce_rns/jun8_451cm_source_all_.dat ----------------------
+ Date:	14/6/2016
+ time:	'11:25:11'
+\--------------Source Sim Time	20.0 ----------
+Name	ste
+Alarm Setting	9.8
+Micro Rad Per Hr	10.0453092958
+Sigma Rad	0.544231339096
+Source Hits Per Sec	24.6
+Source Sigma Hit Rate	1.10905365064
+Background Hit Rate	15.14
+Sigma Background Hit Rate	3.89101529167
+Combined Hit Rate	39.74
+Sigma Combined Hit Rate	4.04598566483
+Sigma Above Background	6.32225734313
+Hits Required to alarm	38.1319498584
+Probability to Alarm	0.56791897881
+ \ \ \ \ \ \ \ \ \  \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 
+
+\---------------------- /home/jcalderon/NewFolder/prd_scripts/jun8_prd_451-563cm_srce_rns/jun8_488cm_source_all_.dat ----------------------
+ Date:	14/6/2016
+ time:	'11:25:12'
+\--------------Source Sim Time	20.0 ----------
+Name	ste
+Alarm Setting	9.8
+Micro Rad Per Hr	9.01007110684
+Sigma Rad	0.518893682089
+Source Hits Per Sec	21.35
+Source Sigma Hit Rate	1.03319891599
+Background Hit Rate	15.14
+Sigma Background Hit Rate	3.89101529167
+Combined Hit Rate	36.49
+Sigma Combined Hit Rate	4.02585394668
+Sigma Above Background	5.48699976731
+Hits Required to alarm	38.1319498584
+Probability to Alarm	0.360477360829
+ \ \ \ \ \ \ \ \ \  \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 
+
+\---------------------- /home/jcalderon/NewFolder/prd_scripts/jun8_prd_451-563cm_srce_rns/jun8_525cm_source_all_.dat ----------------------
+ Date:	14/6/2016
+ time:	'11:25:12'
+\--------------Source Sim Time	20.0 ----------
+Name	ste
+Alarm Setting	9.8
+Micro Rad Per Hr	7.19491828552
+Sigma Rad	0.442538518216
+Source Hits Per Sec	18.4
+Source Sigma Hit Rate	0.959166304663
+Background Hit Rate	15.14
+Sigma Background Hit Rate	3.89101529167
+Combined Hit Rate	33.54
+Sigma Combined Hit Rate	4.0074929819
+Sigma Above Background	4.7288428908
+Hits Required to alarm	38.1319498584
+Probability to Alarm	0.193591487327
+ \ \ \ \ \ \ \ \ \  \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 
+
+\---------------------- /home/jcalderon/NewFolder/prd_scripts/jun8_prd_451-563cm_srce_rns/jun8_20sec__563cm_source_all_.dat ----------------------
+ Date:	14/6/2016
+ time:	'11:25:12'
 \--------------Source Sim Time	20.0 ----------
 Name	ste
 Alarm Setting	9.8

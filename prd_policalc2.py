@@ -23,7 +23,7 @@ import pylab as P
 import pdb
 from os import path
 from datetime import datetime
-
+import prd_allplots as pap
 # POST MAY20 updates#
 # a rad is .01 joules per kilogram
 # Polimaster with several channels
@@ -218,7 +218,7 @@ def statprint(ratedat,sim_time,filename,sys_time,date,dist,allopt, all_poli, all
         files = [file_ste,file_minirad,file_poli] 
 #Writes out to each prd file
     for f in files: 
-        f.write('\ \ \ \ \ \ \ \ \ \  \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ')
+        f.write('\n \ \ \ \ \ \ \ \ \  \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ')
         f.write('\n\n\---------------------- {0} ----------------------'.format(filename))
         f.write('\n Date:\t{0}/{1}/{2}\n time:\t{3}'.format(date.day,date.month,date.year,sys_time))
         f.write('\n\--------------Source Sim Time\t{0} ----------'.format(sim_time))
@@ -236,7 +236,8 @@ def statprint(ratedat,sim_time,filename,sys_time,date,dist,allopt, all_poli, all
     for key, value in ps2.items(): 
         file_poli.write('\n{0}\t{1}'.format(str(key),str(value)))
     file_poli.close()
-          
+
+    return files
 
 def allout(config):
     allopt = True
@@ -244,20 +245,15 @@ def allout(config):
     all_minirad = aux.Ministore()
     with open(config, 'r') as fin:
         for line in fin:
-            
             line = line.strip()
             if not line or line.startswith('#'):
                continue 
             line = line.split()
-            print(line)
             path = line[0]
-            print(path)
             sim_time = float(line[1])
-            print(sim_time)
             distance = line[2]
-            print(distance)
             main( path, sim_time, distance , allopt, all_poli, all_minirad )
-     
+    return all_poli, all_minirad 
 
 #------------------Main Funcion----------------#
 
@@ -266,22 +262,27 @@ def main(filename, sim_time, dist = None, allopt = False, all_poli = None, all_m
     date = datetime.now()
     sys_time = repr(time.strftime("%H:%M:%S"))
     ratedat = Sortdat(filename,sim_time) 
-    print('class object creation time %s sec', (datetime.now()-start_time))
     # plotter(ratedat,filename) 
-    statprint(ratedat,sim_time,filename,sys_time,date,dist,allopt,all_poli,all_minirad)
-    
+    files = statprint(ratedat,sim_time,filename,sys_time,date,dist,allopt,all_poli,all_minirad)
+    return files 
 
 
 #ooooOOOOoooooOOOOooooOOOOOoooOOOOOOoooooOOOOOOooooo
 #[0] script name, [input_file], [Time]
 
 if __name__=='__main__':
-    print('use "runconfig" to load myconfig.pyth')
+    print('use argv "runconfig" to load myconfig.pyth\n')
     if sys.argv[1] == 'runconfig' : 
-        allout(config)
+        all_poli, all_minirad = allout(config)
+        pap.plotpoli(all_poli)
+        #pap.plotmini(all_mini)
     else:       
         filename = sys.argv[1]
         sim_time = float(sys.argv[2])
-        main(filename, sim_time)
+        files = main(filename, sim_time)
+        for name in files:
+            print('writing to file: '.format(name))
+    sys.exit(0)
 
-    sys.exit(0 )
+
+
