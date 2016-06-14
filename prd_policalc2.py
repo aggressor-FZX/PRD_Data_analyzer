@@ -273,9 +273,9 @@ def main(filename, sim_time, dist = None, allopt = False, all_poli = None, all_m
 if __name__=='__main__':
     print('use argv "runconfig" to load myconfig.pyth\n')
     if sys.argv[1] == 'runconfig' : 
-        all_poli, all_minirad = allout(config)
+        all_poli, all_mini = allout(config)
         pap.plotpoli(all_poli)
-        #pap.plotmini(all_mini)
+        pap.plotmini(all_mini)
     else:       
         filename = sys.argv[1]
         sim_time = float(sys.argv[2])

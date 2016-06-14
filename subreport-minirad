@@ -611,3 +611,355 @@ Base Alarm Count	20.915
 Rate Above Base Alarm Rate	2.6
 alarm level	1
 Probability to Alarm	0.725895689896
+ \ \ \ \ \ \ \ \ \  \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 
+
+\---------------------- /home/jcalderon/NewFolder/prd_scripts/jun8_prd_451-563cm_srce_rns/jun8_451cm_source_all_.dat ----------------------
+ Date:	14/6/2016
+ time:	'13:09:24'
+\--------------Source Sim Time	20.0 ----------
+Name	minirad
+Alarm Setting	0
+Actual Distances	[282, 316, 349, 372, 406, 451, 488, 525, 563, 601, 638, 676, 789, 902]
+Actual Probability	[1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 0.95, 0.88, 0.73, 0.55, 0.1, 0.0]
+Micro Rad Per Hr	9.3500386804
+Sigma Rad	0.866958998722
+Source Hits Per Sec	19.75
+Source Sigma Hit Rate	0.993730345718
+Background Hit Rate	8.915
+Sigma Background Hit Rate	4.22255846614
+Combined Hit Rate	28.665
+Sigma Combined Hit Rate	4.33791424535
+Base Alarm Count	20.915
+Rate Above Base Alarm Rate	7.75
+alarm level	1
+Probability to Alarm	0.942333330499
+ \ \ \ \ \ \ \ \ \  \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 
+
+\---------------------- /home/jcalderon/NewFolder/prd_scripts/jun8_prd_451-563cm_srce_rns/jun8_488cm_source_all_.dat ----------------------
+ Date:	14/6/2016
+ time:	'13:09:24'
+\--------------Source Sim Time	20.0 ----------
+Name	minirad
+Alarm Setting	0
+Actual Distances	[282, 316, 349, 372, 406, 451, 488, 525, 563, 601, 638, 676, 789, 902]
+Actual Probability	[1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 0.95, 0.88, 0.73, 0.55, 0.1, 0.0]
+Micro Rad Per Hr	11.4146654644
+Sigma Rad	0.826596182084
+Source Hits Per Sec	22.05
+Source Sigma Hit Rate	1.05
+Background Hit Rate	8.915
+Sigma Background Hit Rate	4.22255846614
+Combined Hit Rate	30.965
+Sigma Combined Hit Rate	4.35114927347
+Base Alarm Count	20.915
+Rate Above Base Alarm Rate	10.05
+alarm level	1
+Probability to Alarm	0.975747512796
+ \ \ \ \ \ \ \ \ \  \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 
+
+\---------------------- /home/jcalderon/NewFolder/prd_scripts/jun8_prd_451-563cm_srce_rns/jun8_525cm_source_all_.dat ----------------------
+ Date:	14/6/2016
+ time:	'13:09:24'
+\--------------Source Sim Time	20.0 ----------
+Name	minirad
+Alarm Setting	0
+Actual Distances	[282, 316, 349, 372, 406, 451, 488, 525, 563, 601, 638, 676, 789, 902]
+Actual Probability	[1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 0.95, 0.88, 0.73, 0.55, 0.1, 0.0]
+Micro Rad Per Hr	7.91260531999
+Sigma Rad	0.704962619915
+Source Hits Per Sec	15.9
+Source Sigma Hit Rate	0.891627725006
+Background Hit Rate	8.915
+Sigma Background Hit Rate	4.22255846614
+Combined Hit Rate	24.814999999999998
+Sigma Combined Hit Rate	4.31566912541
+Base Alarm Count	20.915
+Rate Above Base Alarm Rate	3.9
+alarm level	1
+Probability to Alarm	0.804724875149
+ \ \ \ \ \ \ \ \ \  \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 
+
+\---------------------- /home/jcalderon/NewFolder/prd_scripts/jun8_prd_451-563cm_srce_rns/jun8_20sec__563cm_source_all_.dat ----------------------
+ Date:	14/6/2016
+ time:	'13:09:24'
+\--------------Source Sim Time	20.0 ----------
+Name	minirad
+Alarm Setting	0
+Actual Distances	[282, 316, 349, 372, 406, 451, 488, 525, 563, 601, 638, 676, 789, 902]
+Actual Probability	[1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 0.95, 0.88, 0.73, 0.55, 0.1, 0.0]
+Micro Rad Per Hr	7.19336332394
+Sigma Rad	0.69736086694
+Source Hits Per Sec	14.6
+Source Sigma Hit Rate	0.854400374532
+Background Hit Rate	8.915
+Sigma Background Hit Rate	4.22255846614
+Combined Hit Rate	23.515
+Sigma Combined Hit Rate	4.30813184571
+Base Alarm Count	20.915
+Rate Above Base Alarm Rate	2.6
+alarm level	1
+Probability to Alarm	0.725895689896
+ \ \ \ \ \ \ \ \ \  \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 
+
+\---------------------- /home/jcalderon/NewFolder/prd_scripts/jun8_prd_451-563cm_srce_rns/jun8_451cm_source_all_.dat ----------------------
+ Date:	14/6/2016
+ time:	'13:12:35'
+\--------------Source Sim Time	20.0 ----------
+Name	minirad
+Alarm Setting	0
+Actual Distances	[282, 316, 349, 372, 406, 451, 488, 525, 563, 601, 638, 676, 789, 902]
+Actual Probability	[1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 0.95, 0.88, 0.73, 0.55, 0.1, 0.0]
+Micro Rad Per Hr	9.3500386804
+Sigma Rad	0.866958998722
+Source Hits Per Sec	19.75
+Source Sigma Hit Rate	0.993730345718
+Background Hit Rate	8.915
+Sigma Background Hit Rate	4.22255846614
+Combined Hit Rate	28.665
+Sigma Combined Hit Rate	4.33791424535
+Base Alarm Count	20.915
+Rate Above Base Alarm Rate	7.75
+alarm level	1
+Probability to Alarm	0.942333330499
+ \ \ \ \ \ \ \ \ \  \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 
+
+\---------------------- /home/jcalderon/NewFolder/prd_scripts/jun8_prd_451-563cm_srce_rns/jun8_488cm_source_all_.dat ----------------------
+ Date:	14/6/2016
+ time:	'13:12:35'
+\--------------Source Sim Time	20.0 ----------
+Name	minirad
+Alarm Setting	0
+Actual Distances	[282, 316, 349, 372, 406, 451, 488, 525, 563, 601, 638, 676, 789, 902]
+Actual Probability	[1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 0.95, 0.88, 0.73, 0.55, 0.1, 0.0]
+Micro Rad Per Hr	11.4146654644
+Sigma Rad	0.826596182084
+Source Hits Per Sec	22.05
+Source Sigma Hit Rate	1.05
+Background Hit Rate	8.915
+Sigma Background Hit Rate	4.22255846614
+Combined Hit Rate	30.965
+Sigma Combined Hit Rate	4.35114927347
+Base Alarm Count	20.915
+Rate Above Base Alarm Rate	10.05
+alarm level	1
+Probability to Alarm	0.975747512796
+ \ \ \ \ \ \ \ \ \  \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 
+
+\---------------------- /home/jcalderon/NewFolder/prd_scripts/jun8_prd_451-563cm_srce_rns/jun8_525cm_source_all_.dat ----------------------
+ Date:	14/6/2016
+ time:	'13:12:36'
+\--------------Source Sim Time	20.0 ----------
+Name	minirad
+Alarm Setting	0
+Actual Distances	[282, 316, 349, 372, 406, 451, 488, 525, 563, 601, 638, 676, 789, 902]
+Actual Probability	[1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 0.95, 0.88, 0.73, 0.55, 0.1, 0.0]
+Micro Rad Per Hr	7.91260531999
+Sigma Rad	0.704962619915
+Source Hits Per Sec	15.9
+Source Sigma Hit Rate	0.891627725006
+Background Hit Rate	8.915
+Sigma Background Hit Rate	4.22255846614
+Combined Hit Rate	24.814999999999998
+Sigma Combined Hit Rate	4.31566912541
+Base Alarm Count	20.915
+Rate Above Base Alarm Rate	3.9
+alarm level	1
+Probability to Alarm	0.804724875149
+ \ \ \ \ \ \ \ \ \  \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 
+
+\---------------------- /home/jcalderon/NewFolder/prd_scripts/jun8_prd_451-563cm_srce_rns/jun8_20sec__563cm_source_all_.dat ----------------------
+ Date:	14/6/2016
+ time:	'13:12:36'
+\--------------Source Sim Time	20.0 ----------
+Name	minirad
+Alarm Setting	0
+Actual Distances	[282, 316, 349, 372, 406, 451, 488, 525, 563, 601, 638, 676, 789, 902]
+Actual Probability	[1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 0.95, 0.88, 0.73, 0.55, 0.1, 0.0]
+Micro Rad Per Hr	7.19336332394
+Sigma Rad	0.69736086694
+Source Hits Per Sec	14.6
+Source Sigma Hit Rate	0.854400374532
+Background Hit Rate	8.915
+Sigma Background Hit Rate	4.22255846614
+Combined Hit Rate	23.515
+Sigma Combined Hit Rate	4.30813184571
+Base Alarm Count	20.915
+Rate Above Base Alarm Rate	2.6
+alarm level	1
+Probability to Alarm	0.725895689896
+ \ \ \ \ \ \ \ \ \  \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 
+
+\---------------------- /home/jcalderon/NewFolder/prd_scripts/jun8_prd_451-563cm_srce_rns/jun8_451cm_source_all_.dat ----------------------
+ Date:	14/6/2016
+ time:	'13:13:23'
+\--------------Source Sim Time	20.0 ----------
+Name	minirad
+Alarm Setting	0
+Actual Distances	[282, 316, 349, 372, 406, 451, 488, 525, 563, 601, 638, 676, 789, 902]
+Actual Probability	[1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 0.95, 0.88, 0.73, 0.55, 0.1, 0.0]
+Micro Rad Per Hr	9.3500386804
+Sigma Rad	0.866958998722
+Source Hits Per Sec	19.75
+Source Sigma Hit Rate	0.993730345718
+Background Hit Rate	8.915
+Sigma Background Hit Rate	4.22255846614
+Combined Hit Rate	28.665
+Sigma Combined Hit Rate	4.33791424535
+Base Alarm Count	20.915
+Rate Above Base Alarm Rate	7.75
+alarm level	1
+Probability to Alarm	0.942333330499
+ \ \ \ \ \ \ \ \ \  \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 
+
+\---------------------- /home/jcalderon/NewFolder/prd_scripts/jun8_prd_451-563cm_srce_rns/jun8_488cm_source_all_.dat ----------------------
+ Date:	14/6/2016
+ time:	'13:13:24'
+\--------------Source Sim Time	20.0 ----------
+Name	minirad
+Alarm Setting	0
+Actual Distances	[282, 316, 349, 372, 406, 451, 488, 525, 563, 601, 638, 676, 789, 902]
+Actual Probability	[1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 0.95, 0.88, 0.73, 0.55, 0.1, 0.0]
+Micro Rad Per Hr	11.4146654644
+Sigma Rad	0.826596182084
+Source Hits Per Sec	22.05
+Source Sigma Hit Rate	1.05
+Background Hit Rate	8.915
+Sigma Background Hit Rate	4.22255846614
+Combined Hit Rate	30.965
+Sigma Combined Hit Rate	4.35114927347
+Base Alarm Count	20.915
+Rate Above Base Alarm Rate	10.05
+alarm level	1
+Probability to Alarm	0.975747512796
+ \ \ \ \ \ \ \ \ \  \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 
+
+\---------------------- /home/jcalderon/NewFolder/prd_scripts/jun8_prd_451-563cm_srce_rns/jun8_525cm_source_all_.dat ----------------------
+ Date:	14/6/2016
+ time:	'13:13:24'
+\--------------Source Sim Time	20.0 ----------
+Name	minirad
+Alarm Setting	0
+Actual Distances	[282, 316, 349, 372, 406, 451, 488, 525, 563, 601, 638, 676, 789, 902]
+Actual Probability	[1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 0.95, 0.88, 0.73, 0.55, 0.1, 0.0]
+Micro Rad Per Hr	7.91260531999
+Sigma Rad	0.704962619915
+Source Hits Per Sec	15.9
+Source Sigma Hit Rate	0.891627725006
+Background Hit Rate	8.915
+Sigma Background Hit Rate	4.22255846614
+Combined Hit Rate	24.814999999999998
+Sigma Combined Hit Rate	4.31566912541
+Base Alarm Count	20.915
+Rate Above Base Alarm Rate	3.9
+alarm level	1
+Probability to Alarm	0.804724875149
+ \ \ \ \ \ \ \ \ \  \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 
+
+\---------------------- /home/jcalderon/NewFolder/prd_scripts/jun8_prd_451-563cm_srce_rns/jun8_20sec__563cm_source_all_.dat ----------------------
+ Date:	14/6/2016
+ time:	'13:13:24'
+\--------------Source Sim Time	20.0 ----------
+Name	minirad
+Alarm Setting	0
+Actual Distances	[282, 316, 349, 372, 406, 451, 488, 525, 563, 601, 638, 676, 789, 902]
+Actual Probability	[1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 0.95, 0.88, 0.73, 0.55, 0.1, 0.0]
+Micro Rad Per Hr	7.19336332394
+Sigma Rad	0.69736086694
+Source Hits Per Sec	14.6
+Source Sigma Hit Rate	0.854400374532
+Background Hit Rate	8.915
+Sigma Background Hit Rate	4.22255846614
+Combined Hit Rate	23.515
+Sigma Combined Hit Rate	4.30813184571
+Base Alarm Count	20.915
+Rate Above Base Alarm Rate	2.6
+alarm level	1
+Probability to Alarm	0.725895689896
+ \ \ \ \ \ \ \ \ \  \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 
+
+\---------------------- /home/jcalderon/NewFolder/prd_scripts/jun8_prd_451-563cm_srce_rns/jun8_451cm_source_all_.dat ----------------------
+ Date:	14/6/2016
+ time:	'13:18:42'
+\--------------Source Sim Time	20.0 ----------
+Name	minirad
+Alarm Setting	0
+Actual Distances	[282, 316, 349, 372, 406, 451, 488, 525, 563, 601, 638, 676, 789, 902]
+Actual Probability	[1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 0.95, 0.88, 0.73, 0.55, 0.1, 0.0]
+Micro Rad Per Hr	9.3500386804
+Sigma Rad	0.866958998722
+Source Hits Per Sec	19.75
+Source Sigma Hit Rate	0.993730345718
+Background Hit Rate	8.915
+Sigma Background Hit Rate	4.22255846614
+Combined Hit Rate	28.665
+Sigma Combined Hit Rate	4.33791424535
+Base Alarm Count	20.915
+Rate Above Base Alarm Rate	7.75
+alarm level	1
+Probability to Alarm	0.942333330499
+ \ \ \ \ \ \ \ \ \  \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 
+
+\---------------------- /home/jcalderon/NewFolder/prd_scripts/jun8_prd_451-563cm_srce_rns/jun8_488cm_source_all_.dat ----------------------
+ Date:	14/6/2016
+ time:	'13:18:43'
+\--------------Source Sim Time	20.0 ----------
+Name	minirad
+Alarm Setting	0
+Actual Distances	[282, 316, 349, 372, 406, 451, 488, 525, 563, 601, 638, 676, 789, 902]
+Actual Probability	[1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 0.95, 0.88, 0.73, 0.55, 0.1, 0.0]
+Micro Rad Per Hr	11.4146654644
+Sigma Rad	0.826596182084
+Source Hits Per Sec	22.05
+Source Sigma Hit Rate	1.05
+Background Hit Rate	8.915
+Sigma Background Hit Rate	4.22255846614
+Combined Hit Rate	30.965
+Sigma Combined Hit Rate	4.35114927347
+Base Alarm Count	20.915
+Rate Above Base Alarm Rate	10.05
+alarm level	1
+Probability to Alarm	0.975747512796
+ \ \ \ \ \ \ \ \ \  \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 
+
+\---------------------- /home/jcalderon/NewFolder/prd_scripts/jun8_prd_451-563cm_srce_rns/jun8_525cm_source_all_.dat ----------------------
+ Date:	14/6/2016
+ time:	'13:18:43'
+\--------------Source Sim Time	20.0 ----------
+Name	minirad
+Alarm Setting	0
+Actual Distances	[282, 316, 349, 372, 406, 451, 488, 525, 563, 601, 638, 676, 789, 902]
+Actual Probability	[1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 0.95, 0.88, 0.73, 0.55, 0.1, 0.0]
+Micro Rad Per Hr	7.91260531999
+Sigma Rad	0.704962619915
+Source Hits Per Sec	15.9
+Source Sigma Hit Rate	0.891627725006
+Background Hit Rate	8.915
+Sigma Background Hit Rate	4.22255846614
+Combined Hit Rate	24.814999999999998
+Sigma Combined Hit Rate	4.31566912541
+Base Alarm Count	20.915
+Rate Above Base Alarm Rate	3.9
+alarm level	1
+Probability to Alarm	0.804724875149
+ \ \ \ \ \ \ \ \ \  \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 
+
+\---------------------- /home/jcalderon/NewFolder/prd_scripts/jun8_prd_451-563cm_srce_rns/jun8_20sec__563cm_source_all_.dat ----------------------
+ Date:	14/6/2016
+ time:	'13:18:43'
+\--------------Source Sim Time	20.0 ----------
+Name	minirad
+Alarm Setting	0
+Actual Distances	[282, 316, 349, 372, 406, 451, 488, 525, 563, 601, 638, 676, 789, 902]
+Actual Probability	[1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 0.95, 0.88, 0.73, 0.55, 0.1, 0.0]
+Micro Rad Per Hr	7.19336332394
+Sigma Rad	0.69736086694
+Source Hits Per Sec	14.6
+Source Sigma Hit Rate	0.854400374532
+Background Hit Rate	8.915
+Sigma Background Hit Rate	4.22255846614
+Combined Hit Rate	23.515
+Sigma Combined Hit Rate	4.30813184571
+Base Alarm Count	20.915
+Rate Above Base Alarm Rate	2.6
+alarm level	1
+Probability to Alarm	0.725895689896

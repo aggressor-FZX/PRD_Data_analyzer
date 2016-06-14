@@ -101,12 +101,32 @@ def plotpoli(poli, rate = False, prob = True):
         plt.legend(loc=1, borderaxespad=0.,frameon = False)
         plt.show()
 
+# requires Ministore object whcih holds probs and rates of several runs
+def plotmini(mini, rate = False, prob = True):
 
+    distances = np.array(mini.dist_list)
+    rates = np.array(mini.rates)
+    probs = np.array(mini.prob)
+    exp_sec = 2
 
+    if rate:
+        plt.figure() 
+        plt.title('Minirad D')
+        plt.ylabel('Count Rate' )
+        plt.xlabel('Distance CM' )
+        plt.plot(distances, rates, label = 'minirad')
+        plt.legend(loc=1, borderaxespad=0.,frameon = False)
+        plt.show()
+    if prob:
+        plt.figure() 
+        plt.title('Polimaster\nProbability of Detection in Less Than '+str(exp_sec)+' Seconds')
+        plt.ylabel('Probability of Detection' )
+        plt.xlabel('Distance CM From Ba133 Source' )
 
+        prob2alrm = (1 - (1 - probs)**exp_sec ) 
 
-
-
-
+        plt.plot( mini.actual_dist, mini.actual_prob, marker = 'x', linewidth = '3', c = 'r', label = 'Actual Result')
+        plt.plot( distances, prob2alrm,'-', marker = 'o', label = 'Minirad')
+        plt.show()
 
 

@@ -68,7 +68,6 @@ class Bkr_minirad(object):
         self.sig_counts = np.sqrt(self.counts)  
         self.foursig = self.four_sigma[np.around(self.rate)]
         self.hexval = self.hex_adjust[np.around(self.hex_set)]
-        print(self.foursig)
         self.base_alarm = self.rate + self.hexval + self.foursig
         self.source_time = sortdat.time
         
@@ -230,7 +229,6 @@ def ministat(detector, background):
     mean = stat['Combined Hit Rate']
     alarm = stat['Base Alarm Count']  # value needed to set off alarm
     stat['Probability to Alarm'] = poisson.sf(alarm,mean)
-    print('prob to alarm is {}'.format(stat['Probability to Alarm']))
 
     return stat
 
@@ -421,7 +419,6 @@ def plotter(fromdat,filename, show = False):
 
 # fills with data from multiple runs with probs at various distances.
 class Ministore(object):
-    dist_list = []
     actual_dist = None
     actual_prob = None
 
@@ -429,21 +426,19 @@ class Ministore(object):
     def __init__(self):
         self.rates = []
         self.prob = []
+        self.dist_list = []
 
     def getactual(self,dict1):
         self.actual_dist = np.array(dict1['Actual Distances'])
         self.actual_prob = np.array(dict1['Actual Probability'])
-        print(dict1['Actual Distances'])
-        print(dict1['Actual Probability'])
 
     def fill(self, lib, distance,sim_time):
         self.dist_list.append(distance)
-        print(lib['Probability to Alarm'])
         self.prob.append(lib['Probability to Alarm'])
         # only load actual dists once 
         if self.actual_dist is None:
             self.getactual(lib)
-        # get probs for each call
+        # get rate for each call
         self.rate = lib['Combined Hit Rate']
         
 # fills with data from multiple runs with probs at various distances.
@@ -472,11 +467,8 @@ class Polistore(object):
     def getactual(self,dict1):
         self.actual_dist = np.array(dict1['Actual Distances'])
         self.actual_prob = np.array(dict1['Actual Probability'])
-        print(dict1['Actual Distances'])
-        print(dict1['Actual Probability'])
     
     def fill(self, lib1, lib2, distance, simtime = None):
-        print(distance)
         self.dist_list.append(distance)
 
         self.getchannels(lib1,lib2)
