@@ -1,0 +1,391 @@
+
+#!/usr/bin/env python
+# a rad is .01 joules per kilogram
+# Polimaster with several channels
+# STE has no upper bound energy
+
+# POST MAY20 updates
+#----------------------Polimaster Notes----------------------#
+# Polimaster 33-3000 kev
+#The analysis is being done within two time intervals 1s and 2s . 
+#During calibration, the average count rate for 1 and 2 seconds are being calculated for every energy window 
+#and for a combination of several windows combined. 
+#
+#The sigmas are equal to square root of a count rate.
+#8 quarter second intervals are being stored for every energy window at any time. 
+#For 1s analysis slot, the most recent 4 quarter-second intervals are being analyzed. 
+#----------------------------------minirad----------------------#
+# Starts with a 30 second calibration interval
+# uses calibration to establish a threshold
+# recalibrates itself somehow 
+# Gamma range goes from 30 Kev 3MeV 
+#----------------------STE Notes----------------------#
+# Low energy cut is 45KeV
+# I have guessed the high energy cuttoff
+from scipy.stats import norm
+import matplotlib.mlab as mlab
+import matplotlib.pyplot as plt
+import numpy as np  
+from collections import OrderedDict
+conv = 1.60218*10**-16 #conversion factor kev to 
+dist = [451,488,525,563] #distances
+
+class Bkr_ste(object):
+    rate = 15.14
+    itime = 1
+
+    def __init__(self,sortdat):
+        self.counts =  self.rate*self.itime
+        self.sig_counts = np.sqrt(self.counts)  
+        self.engeryrate = 4.92
+        self.sig_energyrate = .05
+        self.source_time = sortdat.time
+
+class Bkr_minirad(object):
+    rate = 8.915
+    alarm = 5.4
+    itime = 2
+
+    def __init__(self,sortdat):
+        self.counts = self.rate*self.itime
+        self.sig_counts = np.sqrt(self.counts)  
+        self.source_time = sortdat.time
+        
+# make detector class containers
+
+class Polimaster(object):
+    alarm = 9.8   # sigma above bkrd alarm setting
+    mass = 34.076 # mass of Polimaster crystal
+    itime1 = 1
+    itime2 = 2
+    mass_kg = mass/1000
+
+
+    def __init__(self,sortdat):
+        self.s_time = sortdat.time
+        self.name = sortdat.detector2
+
+        self.ch1_cut = sortdat.PM_chan[0]
+        self.ch2_cut = sortdat.PM_chan[1]
+        self.ch3_cut = sortdat.PM_chan[2]
+        self.ch4_cut = sortdat.PM_chan[3]
+
+        self.ch1_counts = sortdat.chan1_counter
+        self.ch2_counts = sortdat.chan2_counter
+        self.ch3_counts = sortdat.chan3_counter
+        self.ch4_counts = sortdat.chan4_counter
+
+        self.ch1_rate = self.ch1_counts/sortdat.time
+        self.ch2_rate = self.ch2_counts/sortdat.time
+        self.ch3_rate = self.ch3_counts/sortdat.time
+        self.ch4_rate = self.ch4_counts/sortdat.time
+
+        self.energy = sortdat.det2_val
+        self.t_energy = sortdat.det2_esum
+        self.sig_energy = sortdat.sig_e2
+        self.high_cut = sortdat.PM_chan[3]
+        self.source_time = sortdat.time
+
+
+
+class Ste(object):
+    alarm = 9.8    # sigma above bkrd alarm setting
+    mass = 22.748  # mass of STE crystal
+    itime = 1   # integration time guess
+    high_cut = 3000 
+    mass_kg = mass/1000
+
+    def __init__(self,sortdat):
+        self.name = sortdat.detector1
+        self.so_time = sortdat.time
+        self.low_cut = sortdat.det1_cut
+    
+        self.counts = sortdat.d1counter
+        self.rate = self.counts/sortdat.time
+        self.energy = sortdat.det1_val
+        self.t_energy = sortdat.det1_esum
+        self.sig_energy = sortdat.sig_e1
+        self.source_time = sortdat.time
+     
+
+class Minirad(object):
+    alarm = 9.8     # sigma above bkrd alarm setting -total guess
+    mass = 14.28    # mass of minirad crystal 
+    itime = 1    # integration time -total guess
+    high_cut = 3000 # total guess
+    mass_kg = mass/1000
+
+
+    def __init__(self,sortdat):
+        self.name = sortdat.detector3
+        self.source_time = sortdat.time
+        self.low_cut = sortdat.det3_cut
+        self.high_cut = 3000 
+
+        self.counts = sortdat.d3counter
+        self.rate = self.counts/sortdat.time
+        self.energy = sortdat.det3_val
+        self.t_energy = sortdat.det3_esum
+        self.sig_energy = sortdat.sig_e3
+
+class Bkr_poli(object):
+    rate = [7.543,4.9167,2.0317,14.2]
+    itime1 = 1
+    itime2 = 2
+
+    def __init__(self,sortdat):
+        self.ch1_counts = [self.rate[0]*self.itime1, self.rate[0]*self.itime2]
+        self.ch2_counts = [self.rate[1]*self.itime1, self.rate[1]*self.itime2]
+        self.ch3_counts = [self.rate[2]*self.itime1, self.rate[2]*self.itime2]
+        self.ch4_counts = [self.rate[3]*self.itime1, self.rate[3]*self.itime2]
+        self.sig_ch1 = np.sqrt(self.rate[0])  
+        self.sig_ch2 = np.sqrt(self.rate[1])  
+        self.sig_ch3 = np.sqrt(self.rate[2])  
+        self.sig_ch4 = np.sqrt(self.rate[3])  
+        self.source_time = sortdat.time
+
+# calculate statistics and make dictionary
+def detstat(detector,background):
+    stat = OrderedDict() 
+    stat['Name'] = detector.name
+    stat['Alarm Setting'] = detector.alarm
+    stat['Micro Rad Per Hr'] = ( (100*detector.t_energy*conv) / (detector.mass_kg*(detector.source_time/3600)) )*(10**6)    
+    stat['Sigma Rad'] = ((100*detector.sig_energy*conv) / (detector.mass_kg*(detector.source_time/3600)) )*(10**6)    
+    stat['Source Hits Per Sec'] = detector.rate
+    stat['Source Sigma Hit Rate'] = np.sqrt(detector.counts)/detector.source_time 
+    stat['Background Hit Rate'] = background.rate
+    stat['Sigma Background Hit Rate'] = background.sig_counts
+    stat['Combined Hit Rate'] = (detector.rate) + (background.rate)
+    stat['Sigma Combined Hit Rate'] = np.sqrt( stat['Source Sigma Hit Rate']**2 + (background.sig_counts)**2 )
+    stat['Sigma Above Background'] = detector.rate*detector.itime / background.sig_counts
+    stat['Hits Required to alarm'] = stat['Sigma Background Hit Rate']*stat['Alarm Setting'] 
+    mean = stat['Combined Hit Rate']
+    sigma = stat['Sigma Combined Hit Rate']
+    alarm =  background.sig_counts*detector.alarm # value needed to set off alarm
+    stat['Probability to Alarm'] = norm.sf(alarm,mean,sigma)
+
+    return stat 
+
+def polistat(poli,background):
+    # for one second integration
+    stat_1sec = OrderedDict()
+
+    stat_1sec['Name'] = poli.name
+    stat_1sec['Title'] = '1 Second Integration time'
+    stat_1sec['Alarm Setting'] = poli.alarm
+
+    stat_1sec['Channel 1 Source Hits Per Sec'] = poli.ch1_rate #source rate
+    stat_1sec['Channel 2 Source Hits Per Sec'] = poli.ch2_rate 
+    stat_1sec['Channel 3 Source Hits Per Sec'] = poli.ch3_rate 
+    stat_1sec['Channel 4 Source Hits Per Sec'] = poli.ch4_rate 
+    stat_1sec['Channel 1 Source Sigma Hit Rate'] = np.sqrt(poli.ch1_rate*poli.itime1) / poli.itime1  
+    stat_1sec['Channel 2 Source Sigma Hit Rate'] = np.sqrt(poli.ch2_rate*poli.itime1) / poli.itime1  
+    stat_1sec['Channel 3 Source Sigma Hit Rate'] = np.sqrt(poli.ch3_rate*poli.itime1) / poli.itime1 
+    stat_1sec['Channel 4 Source Sigma Hit Rate'] = np.sqrt(poli.ch4_rate*poli.itime1) / poli.itime1
+
+    stat_1sec['Channel 1 Background Hit Rate'] = background.rate[0] 
+    stat_1sec['Channel 2 Background Hit Rate'] = background.rate[1] 
+    stat_1sec['Channel 3 Background Hit Rate'] = background.rate[2] 
+    stat_1sec['Channel 4 Background Hit Rate'] = background.rate[3] 
+    stat_1sec['Channel 1 Sigma Background Hit Rate'] = background.sig_ch1 
+    stat_1sec['Channel 2 Sigma Background Hit Rate'] = background.sig_ch2 
+    stat_1sec['Channel 3 Sigma Background Hit Rate'] = background.sig_ch3 
+    stat_1sec['Channel 4 Sigma Background Hit Rate'] = background.sig_ch4 
+
+    stat_1sec['Combined Hit Rate Channel 1'] = poli.ch1_rate + background.rate[0]
+    stat_1sec['Combined Hit Rate Channel 2'] = poli.ch2_rate + background.rate[1]
+    stat_1sec['Combined Hit Rate Channel 3'] = poli.ch3_rate + background.rate[2]
+    stat_1sec['Combined Hit Rate Channel 4'] = poli.ch4_rate + background.rate[3]
+    stat_1sec['Sigma Combined Hit Rate Channel 1'] = np.sqrt( stat_1sec['Channel 1 Source Hits Per Sec']**2 + (background.sig_ch1)**2 )
+    stat_1sec['Sigma Combined Hit Rate Channel 2'] = np.sqrt( stat_1sec['Channel 2 Source Hits Per Sec']**2 + (background.sig_ch2)**2 )
+    stat_1sec['Sigma Combined Hit Rate Channel 3'] = np.sqrt( stat_1sec['Channel 3 Source Hits Per Sec']**2 + (background.sig_ch3)**2 )
+    stat_1sec['Sigma Combined Hit Rate Channel 4'] = np.sqrt( stat_1sec['Channel 4 Source Hits Per Sec']**2 + (background.sig_ch4)**2 )
+
+    stat_1sec['Channel 1 Sigma Above Background'] = stat_1sec['Channel 1 Source Hits Per Sec']*poli.itime1 / background.sig_ch1
+    stat_1sec['Channel 2 Sigma Above Background'] = stat_1sec['Channel 2 Source Hits Per Sec']*poli.itime1 / background.sig_ch2
+    stat_1sec['Channel 3 Sigma Above Background'] = stat_1sec['Channel 3 Source Hits Per Sec']*poli.itime1 / background.sig_ch3
+    stat_1sec['Channel 4 Sigma Above Background'] = stat_1sec['Channel 4 Source Hits Per Sec']*poli.itime1 / background.sig_ch4
+    stat_1sec['Channel 1 Rate Required to alarm'] = stat_1sec['Channel 1 Sigma Background Hit Rate']*stat_1sec['Alarm Setting'] 
+    stat_1sec['Channel 2 Rate Required to alarm'] = stat_1sec['Channel 2 Sigma Background Hit Rate']*stat_1sec['Alarm Setting'] 
+    stat_1sec['Channel 3 Rate Required to alarm'] = stat_1sec['Channel 3 Sigma Background Hit Rate']*stat_1sec['Alarm Setting'] 
+    stat_1sec['Channel 4 Rate Required to alarm'] = stat_1sec['Channel 4 Sigma Background Hit Rate']*stat_1sec['Alarm Setting'] 
+
+
+    ch1_mean = stat_1sec['Combined Hit Rate Channel 1']
+    ch2_mean = stat_1sec['Combined Hit Rate Channel 2']
+    ch3_mean = stat_1sec['Combined Hit Rate Channel 3']
+    ch4_mean = stat_1sec['Combined Hit Rate Channel 4']
+    ch1_sigma = stat_1sec['Sigma Combined Hit Rate Channel 1']
+    ch2_sigma = stat_1sec['Sigma Combined Hit Rate Channel 2']
+    ch3_sigma = stat_1sec['Sigma Combined Hit Rate Channel 3']
+    ch4_sigma = stat_1sec['Sigma Combined Hit Rate Channel 4']
+
+    ch1_alarm =  stat_1sec['Channel 1 Rate Required to alarm'] # value needed to set off alarm
+    ch2_alarm =  stat_1sec['Channel 2 Rate Required to alarm'] 
+    ch3_alarm =  stat_1sec['Channel 3 Rate Required to alarm'] 
+    ch4_alarm =  stat_1sec['Channel 4 Rate Required to alarm'] 
+
+    stat_1sec['Channel 1 Probability to Alarm'] = norm.sf(ch1_alarm,ch1_mean,ch1_sigma)
+    stat_1sec['Channel 2 Probability to Alarm'] = norm.sf(ch2_alarm,ch2_mean,ch2_sigma)
+    stat_1sec['Channel 3 Probability to Alarm'] = norm.sf(ch3_alarm,ch3_mean,ch3_sigma)
+    stat_1sec['Channel 4 Probability to Alarm'] = norm.sf(ch4_alarm,ch4_mean,ch4_sigma)
+
+
+    # for two second integration time
+    stat_2sec = OrderedDict() 
+    stat_2sec['Name'] = poli.name
+    stat_2sec['Title'] = '2 Second Integration time'
+    stat_2sec['Alarm Setting'] = poli.alarm
+    stat_2sec['Channel 1 Source Hits Per Sec'] = poli.ch1_rate #source rate
+    stat_2sec['Channel 2 Source Hits Per Sec'] = poli.ch2_rate 
+    stat_2sec['Channel 3 Source Hits Per Sec'] = poli.ch3_rate 
+    stat_2sec['Channel 4 Source Hits Per Sec'] = poli.ch4_rate 
+    stat_2sec['Channel 1 Source Sigma Hit Rate'] = np.sqrt(poli.ch1_rate*poli.itime2) / poli.itime2  
+    stat_2sec['Channel 2 Source Sigma Hit Rate'] = np.sqrt(poli.ch2_rate*poli.itime2) / poli.itime2  
+    stat_2sec['Channel 3 Source Sigma Hit Rate'] = np.sqrt(poli.ch3_rate*poli.itime2) / poli.itime2 
+    stat_2sec['Channel 4 Source Sigma Hit Rate'] = np.sqrt(poli.ch4_rate*poli.itime2) / poli.itime2
+
+    stat_2sec['Channel 1 Background Hit Rate'] = background.rate[0] 
+    stat_2sec['Channel 2 Background Hit Rate'] = background.rate[1]
+    stat_2sec['Channel 3 Background Hit Rate'] = background.rate[2]
+    stat_2sec['Channel 4 Background Hit Rate'] = background.rate[3]
+    stat_2sec['Channel 1 Sigma Background Hit Rate'] = background.sig_ch1 
+    stat_2sec['Channel 2 Sigma Background Hit Rate'] = background.sig_ch2 
+    stat_2sec['Channel 3 Sigma Background Hit Rate'] = background.sig_ch3 
+    stat_2sec['Channel 4 Sigma Background Hit Rate'] = background.sig_ch4 
+
+    stat_2sec['Combined Hit Rate Channel 1'] = poli.ch1_rate + background.rate[0]
+    stat_2sec['Combined Hit Rate Channel 2'] = poli.ch2_rate + background.rate[1]
+    stat_2sec['Combined Hit Rate Channel 3'] = poli.ch3_rate + background.rate[2]
+    stat_2sec['Combined Hit Rate Channel 4'] = poli.ch4_rate + background.rate[3]
+    stat_2sec['Sigma Combined Hit Rate Channel 1'] = np.sqrt( stat_2sec['Channel 1 Source Sigma Hit Rate']**2 + (background.sig_ch1)**2 )
+    stat_2sec['Sigma Combined Hit Rate Channel 2'] = np.sqrt( stat_2sec['Channel 2 Source Sigma Hit Rate']**2 + (background.sig_ch2)**2 )
+    stat_2sec['Sigma Combined Hit Rate Channel 3'] = np.sqrt( stat_2sec['Channel 3 Source Sigma Hit Rate']**2 + (background.sig_ch3)**2 )
+    stat_2sec['Sigma Combined Hit Rate Channel 4'] = np.sqrt( stat_2sec['Channel 4 Source Sigma Hit Rate']**2 + (background.sig_ch4)**2 )
+
+    stat_2sec['Channel 1 Sigma Above Background'] = stat_2sec['Channel 1 Source Hits Per Sec']*poli.itime2 / background.sig_ch1
+    stat_2sec['Channel 2 Sigma Above Background'] = stat_2sec['Channel 2 Source Hits Per Sec']*poli.itime2 / background.sig_ch2
+    stat_2sec['Channel 3 Sigma Above Background'] = stat_2sec['Channel 3 Source Hits Per Sec']*poli.itime2 / background.sig_ch3
+    stat_2sec['Channel 4 Sigma Above Background'] = stat_2sec['Channel 4 Source Hits Per Sec']*poli.itime2 / background.sig_ch4
+
+    stat_2sec['Channel 1 Source Rate Required to alarm'] = stat_2sec['Channel 1 Sigma Background Hit Rate']*stat_2sec['Alarm Setting'] 
+    stat_2sec['Channel 2 Source Rate Required to alarm'] = stat_2sec['Channel 2 Sigma Background Hit Rate']*stat_2sec['Alarm Setting'] 
+    stat_2sec['Channel 3 Source Rate Required to alarm'] = stat_2sec['Channel 3 Sigma Background Hit Rate']*stat_2sec['Alarm Setting'] 
+    stat_2sec['Channel 4 Source Rate Required to alarm'] = stat_2sec['Channel 4 Sigma Background Hit Rate']*stat_2sec['Alarm Setting'] 
+
+    ch1_mean = stat_2sec['Combined Hit Rate Channel 1']
+    ch2_mean = stat_2sec['Combined Hit Rate Channel 2']
+    ch3_mean = stat_2sec['Combined Hit Rate Channel 3']
+    ch4_mean = stat_2sec['Combined Hit Rate Channel 4']
+    ch1_sigma = stat_2sec['Sigma Combined Hit Rate Channel 1']
+    ch2_sigma = stat_2sec['Sigma Combined Hit Rate Channel 2']
+    ch3_sigma = stat_2sec['Sigma Combined Hit Rate Channel 3']
+    ch4_sigma = stat_2sec['Sigma Combined Hit Rate Channel 4']
+
+    ch1_alarm =  background.sig_ch1*poli.alarm # value needed to set off alarm
+    ch2_alarm =  background.sig_ch2*poli.alarm # 
+    ch3_alarm =  background.sig_ch3*poli.alarm # 
+    ch4_alarm =  background.sig_ch4*poli.alarm # 
+    stat_2sec['Channel 1 Probability to Alarm'] = norm.sf(ch1_alarm,ch1_mean,ch1_sigma)
+    stat_2sec['Channel 2 Probability to Alarm'] = norm.sf(ch2_alarm,ch2_mean,ch2_sigma)
+    stat_2sec['Channel 3 Probability to Alarm'] = norm.sf(ch3_alarm,ch3_mean,ch3_sigma)
+    stat_2sec['Channel 4 Probability to Alarm'] = norm.sf(ch4_alarm,ch4_mean,ch4_sigma)
+
+    return stat_1sec, stat_2sec
+
+ #concatanate an array of files for storage and plotting
+def concat(files, outname):
+    with open(outname,'a') as outfile:
+        for fname in filnames:
+            with open(fname) as inflile:
+                for line in infile:
+                    outfile.write(line)
+            
+#makes specs 
+def plotter(fromdat,filename, show = False):
+    
+    plt.figure() 
+    bins = fromdat.bins
+    plt.hist(fromdat.all_val, bins=bins, color=(0, 0, 0, 1 ),
+                 histtype='step',label = 'All Hits' )
+    plt.ylabel('Counts' )
+    plt.xlabel('Energy kev' )
+    plt.title('All Detectors Spectrum\n'+ filename )
+    plt.legend(loc='upper right' ) 
+    if show:
+        plt.show() 
+
+    plt.figure() 
+    his_det1 = plt.hist(fromdat.det1_val, bins=bins, color=(0, 0, 0, 0.7),
+                 histtype='step', label = fromdat.detector1 )
+   
+    his_det2 = plt.hist(fromdat.det2_val, bins=bins, color=(0, 1, 0, 0.7 ),
+                 histtype='step', label = fromdat.detector2 )
+    plt.ylabel('Counts' )
+    plt.xlabel('Energy kev' )
+    plt.title('Overlay Plot Both Spectrum \n ' + filename)
+    plt.legend(loc='upper right' ) 
+    if show:
+        plt.show() 
+
+    his_det3 = plt.hist(fromdat.det3_val, bins=bins, color=(0, 0, 0, 0.5 ),
+             histtype='step',label = fromdat.detector3 )
+    plt.ylabel('Counts' )
+    plt.xlabel('Energy kev' )
+    plt.title( fromdat.detector3)
+    plt.legend(loc='upper right' ) 
+    if show:
+        plt.show() 
+
+class polistore(object):
+    rates1 = np.empty(4)
+    rates2 = np.empty(4)
+
+
+    distances = []
+
+    def __init__(self):
+        pass
+    def fillrate(self, lib1, lib2, distance):
+        self.distances.append(distance)
+        rate_1 = np.array(
+                [
+                lib1['Combined Hit Rate Channel 1'],
+                lib1['Combined Hit Rate Channel 2'],
+                lib1['Combined Hit Rate Channel 3'],
+                lib1['Combined Hit Rate Channel 4'],
+                ]
+            )
+
+        rate_2 = np.array(
+                [
+                lib2['Combined Hit Rate Channel 1'],
+                lib2['Combined Hit Rate Channel 2'],
+                lib2['Combined Hit Rate Channel 3'],
+                lib2['Combined Hit Rate Channel 4'],
+                ]
+            )
+        self.rates1 = np.vstack((self.rates1,rate_1))
+        self.rates2 = np.vstack((self.rates2,rate_2))
+
+    def __str__(self):
+        printout = []
+        for dist in self.rates1:
+            printout.append(str(dist))
+        return printout
+
+    def plot_poli(self):
+        print(self.rates1)
+        print(self.rates2)
+        plt.figure() 
+        plt.title('1 Second Integration Polimaster')
+        plt.ylabel('Count Rate' )
+        plt.xlabel('Distance CM' )
+        plt.plot(self.distances, self.rates1[:,0], label = 'All Channels Combined')
+        plt.plot(self.distances, self.rates1[:,1], label = 'Channel 2')
+        plt.plot(self.distances, self.rates1[:,2], label = 'Channel 3')
+        plt.plot(self.distances, self.rates1[:,3], label = 'Channel 4')
+        plt.legend()
+        plt.show()
+    
+

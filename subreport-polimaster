@@ -1,0 +1,745 @@
+\ \ \ \ \ \ \ \ \ \  \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 
+
+\---------------------- /home/jcalderon/NewFolder/prd_scripts/jun8_prd_451-563cm_srce_rns/jun8_451cm_source_all_.dat ----------------------
+ Date:	14/6/2016
+ time:	'10:13:30'
+\--------------Source Sim Time	20.0 ----------
+Actual Distances	[282, 316, 349, 372, 406, 451, 488, 525, 563]
+Actual Probability	[1, 1, 1, 1, 1, 1, 0.8, 0.63, 0.3]
+Name	Polimaster
+Title	1 Second Integration time
+Alarm Setting	9.8
+Channel 1 Bin	33
+Channel 2 Bin	120
+Channel 3 Bin	240
+Channel 4 Bin	745
+Channel 1 Source Hits Per Sec	15.4
+Channel 2 Source Hits Per Sec	17.5
+Channel 3 Source Hits Per Sec	8.85
+Channel 4 Source Hits Per Sec	32.25
+Channel 1 Source Sigma Hit Rate	3.92428337407
+Channel 2 Source Sigma Hit Rate	4.18330013267
+Channel 3 Source Sigma Hit Rate	2.97489495613
+Channel 4 Source Sigma Hit Rate	5.6789083458
+Channel 1 Background Hit Rate	7.543
+Channel 2 Background Hit Rate	4.9167
+Channel 3 Background Hit Rate	2.0317
+Channel 4 Background Hit Rate	14.2
+Channel 1 Sigma Background Hit Rate	2.746452257
+Channel 2 Sigma Background Hit Rate	2.21736329906
+Channel 3 Sigma Background Hit Rate	1.42537714307
+Channel 4 Sigma Background Hit Rate	3.76828873628
+Combined Hit Rate Channel 1	22.943
+Combined Hit Rate Channel 2	22.4167
+Combined Hit Rate Channel 3	10.881699999999999
+Combined Hit Rate Channel 4	46.45
+Sigma Combined Hit Rate Channel 1	3.88407003026
+Sigma Combined Hit Rate Channel 2	3.13582525023
+Sigma Combined Hit Rate Channel 3	2.01578768723
+Sigma Combined Hit Rate Channel 4	5.32916503779
+Channel 1 Sigma Above Background	5.60723382711
+Channel 2 Sigma Above Background	7.89225654066
+Channel 3 Sigma Above Background	6.20888306158
+Channel 4 Sigma Above Background	8.5582613905
+Channel 1 Source Rate Required to alarm	26.9152321186
+Channel 2 Source Rate Required to alarm	21.7301603307
+Channel 3 Source Rate Required to alarm	13.9686960021
+Channel 4 Source Rate Required to alarm	36.9292296156
+Channel 1 Probability to Alarm	0.224027314862
+Channel 2 Probability to Alarm	0.563290822689
+Channel 3 Probability to Alarm	0.207874575185
+Channel 4 Probability to Alarm	0.932128434609
+Name	Polimaster
+Title	2 Second Integration time
+Alarm Setting	9.8
+Channel 1 Bin	33
+Channel 2 Bin	120
+Channel 3 Bin	240
+Channel 4 Bin	745
+Channel 1 Source Hits Per Sec	15.4
+Channel 2 Source Hits Per Sec	17.5
+Channel 3 Source Hits Per Sec	8.85
+Channel 4 Source Hits Per Sec	32.25
+Channel 1 Source Sigma Hit Rate	2.7748873851
+Channel 2 Source Sigma Hit Rate	2.95803989155
+Channel 3 Source Sigma Hit Rate	2.1035683968
+Channel 4 Source Sigma Hit Rate	4.01559460105
+Channel 1 Background Hit Rate	7.543
+Channel 2 Background Hit Rate	4.9167
+Channel 3 Background Hit Rate	2.0317
+Channel 4 Background Hit Rate	14.2
+Channel 1 Sigma Background Hit Rate	2.746452257
+Channel 2 Sigma Background Hit Rate	2.21736329906
+Channel 3 Sigma Background Hit Rate	1.42537714307
+Channel 4 Sigma Background Hit Rate	3.76828873628
+Combined Hit Rate Channel 1	22.943
+Combined Hit Rate Channel 2	22.4167
+Combined Hit Rate Channel 3	10.881699999999999
+Combined Hit Rate Channel 4	46.45
+Sigma Combined Hit Rate Channel 1	3.90422847692
+Sigma Combined Hit Rate Channel 2	3.69685001048
+Sigma Combined Hit Rate Channel 3	2.54100373868
+Sigma Combined Hit Rate Channel 4	5.5068139609
+Channel 1 Sigma Above Background	5.60723382711
+Channel 2 Sigma Above Background	7.89225654066
+Channel 3 Sigma Above Background	6.20888306158
+Channel 4 Sigma Above Background	8.5582613905
+Channel 1 Source Rate Required to alarm	26.9152321186
+Channel 2 Source Rate Required to alarm	21.7301603307
+Channel 3 Source Rate Required to alarm	13.9686960021
+Channel 4 Source Rate Required to alarm	36.9292296156
+Channel 1 Probability to Alarm	0.224027314862
+Channel 2 Probability to Alarm	0.563290822689
+Channel 3 Probability to Alarm	0.207874575185
+Channel 4 Probability to Alarm	0.932128434609\ \ \ \ \ \ \ \ \ \  \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 
+
+\---------------------- /home/jcalderon/NewFolder/prd_scripts/jun8_prd_451-563cm_srce_rns/jun8_488cm_source_all_.dat ----------------------
+ Date:	14/6/2016
+ time:	'10:13:31'
+\--------------Source Sim Time	20.0 ----------
+Actual Distances	[282, 316, 349, 372, 406, 451, 488, 525, 563]
+Actual Probability	[1, 1, 1, 1, 1, 1, 0.8, 0.63, 0.3]
+Name	Polimaster
+Title	1 Second Integration time
+Alarm Setting	9.8
+Channel 1 Bin	33
+Channel 2 Bin	120
+Channel 3 Bin	240
+Channel 4 Bin	745
+Channel 1 Source Hits Per Sec	15.8
+Channel 2 Source Hits Per Sec	17.45
+Channel 3 Source Hits Per Sec	6.4
+Channel 4 Source Hits Per Sec	30.05
+Channel 1 Source Sigma Hit Rate	3.97492138287
+Channel 2 Source Sigma Hit Rate	4.17731971484
+Channel 3 Source Sigma Hit Rate	2.52982212813
+Channel 4 Source Sigma Hit Rate	5.48178802947
+Channel 1 Background Hit Rate	7.543
+Channel 2 Background Hit Rate	4.9167
+Channel 3 Background Hit Rate	2.0317
+Channel 4 Background Hit Rate	14.2
+Channel 1 Sigma Background Hit Rate	2.746452257
+Channel 2 Sigma Background Hit Rate	2.21736329906
+Channel 3 Sigma Background Hit Rate	1.42537714307
+Channel 4 Sigma Background Hit Rate	3.76828873628
+Combined Hit Rate Channel 1	23.343
+Combined Hit Rate Channel 2	22.366699999999998
+Combined Hit Rate Channel 3	8.4317
+Combined Hit Rate Channel 4	44.25
+Sigma Combined Hit Rate Channel 1	3.88407003026
+Sigma Combined Hit Rate Channel 2	3.13582525023
+Sigma Combined Hit Rate Channel 3	2.01578768723
+Sigma Combined Hit Rate Channel 4	5.32916503779
+Channel 1 Sigma Above Background	5.75287626417
+Channel 2 Sigma Above Background	7.86970723626
+Channel 3 Sigma Above Background	4.49003972815
+Channel 4 Sigma Above Background	7.97444200882
+Channel 1 Source Rate Required to alarm	26.9152321186
+Channel 2 Source Rate Required to alarm	21.7301603307
+Channel 3 Source Rate Required to alarm	13.9686960021
+Channel 4 Source Rate Required to alarm	36.9292296156
+Channel 1 Probability to Alarm	0.250352922173
+Channel 2 Probability to Alarm	0.55914260989
+Channel 3 Probability to Alarm	0.0487614260419
+Channel 4 Probability to Alarm	0.880178278575
+Name	Polimaster
+Title	2 Second Integration time
+Alarm Setting	9.8
+Channel 1 Bin	33
+Channel 2 Bin	120
+Channel 3 Bin	240
+Channel 4 Bin	745
+Channel 1 Source Hits Per Sec	15.8
+Channel 2 Source Hits Per Sec	17.45
+Channel 3 Source Hits Per Sec	6.4
+Channel 4 Source Hits Per Sec	30.05
+Channel 1 Source Sigma Hit Rate	2.81069386451
+Channel 2 Source Sigma Hit Rate	2.95381109755
+Channel 3 Source Sigma Hit Rate	1.788854382
+Channel 4 Source Sigma Hit Rate	3.87620948866
+Channel 1 Background Hit Rate	7.543
+Channel 2 Background Hit Rate	4.9167
+Channel 3 Background Hit Rate	2.0317
+Channel 4 Background Hit Rate	14.2
+Channel 1 Sigma Background Hit Rate	2.746452257
+Channel 2 Sigma Background Hit Rate	2.21736329906
+Channel 3 Sigma Background Hit Rate	1.42537714307
+Channel 4 Sigma Background Hit Rate	3.76828873628
+Combined Hit Rate Channel 1	23.343
+Combined Hit Rate Channel 2	22.366699999999998
+Combined Hit Rate Channel 3	8.4317
+Combined Hit Rate Channel 4	44.25
+Sigma Combined Hit Rate Channel 1	3.92975826229
+Sigma Combined Hit Rate Channel 2	3.69346720576
+Sigma Combined Hit Rate Channel 3	2.28729097406
+Sigma Combined Hit Rate Channel 4	5.40601516831
+Channel 1 Sigma Above Background	5.75287626417
+Channel 2 Sigma Above Background	7.86970723626
+Channel 3 Sigma Above Background	4.49003972815
+Channel 4 Sigma Above Background	7.97444200882
+Channel 1 Source Rate Required to alarm	26.9152321186
+Channel 2 Source Rate Required to alarm	21.7301603307
+Channel 3 Source Rate Required to alarm	13.9686960021
+Channel 4 Source Rate Required to alarm	36.9292296156
+Channel 1 Probability to Alarm	0.250352922173
+Channel 2 Probability to Alarm	0.55914260989
+Channel 3 Probability to Alarm	0.0487614260419
+Channel 4 Probability to Alarm	0.880178278575\ \ \ \ \ \ \ \ \ \  \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 
+
+\---------------------- /home/jcalderon/NewFolder/prd_scripts/jun8_prd_451-563cm_srce_rns/jun8_525cm_source_all_.dat ----------------------
+ Date:	14/6/2016
+ time:	'10:13:31'
+\--------------Source Sim Time	20.0 ----------
+Actual Distances	[282, 316, 349, 372, 406, 451, 488, 525, 563]
+Actual Probability	[1, 1, 1, 1, 1, 1, 0.8, 0.63, 0.3]
+Name	Polimaster
+Title	1 Second Integration time
+Alarm Setting	9.8
+Channel 1 Bin	33
+Channel 2 Bin	120
+Channel 3 Bin	240
+Channel 4 Bin	745
+Channel 1 Source Hits Per Sec	12.2
+Channel 2 Source Hits Per Sec	13.7
+Channel 3 Source Hits Per Sec	5.95
+Channel 4 Source Hits Per Sec	25.1
+Channel 1 Source Sigma Hit Rate	3.49284983931
+Channel 2 Source Sigma Hit Rate	3.70135110466
+Channel 3 Source Sigma Hit Rate	2.43926218353
+Channel 4 Source Sigma Hit Rate	5.00999001995
+Channel 1 Background Hit Rate	7.543
+Channel 2 Background Hit Rate	4.9167
+Channel 3 Background Hit Rate	2.0317
+Channel 4 Background Hit Rate	14.2
+Channel 1 Sigma Background Hit Rate	2.746452257
+Channel 2 Sigma Background Hit Rate	2.21736329906
+Channel 3 Sigma Background Hit Rate	1.42537714307
+Channel 4 Sigma Background Hit Rate	3.76828873628
+Combined Hit Rate Channel 1	19.743
+Combined Hit Rate Channel 2	18.616699999999998
+Combined Hit Rate Channel 3	7.9817
+Combined Hit Rate Channel 4	39.3
+Sigma Combined Hit Rate Channel 1	3.88407003026
+Sigma Combined Hit Rate Channel 2	3.13582525023
+Sigma Combined Hit Rate Channel 3	2.01578768723
+Sigma Combined Hit Rate Channel 4	5.32916503779
+Channel 1 Sigma Above Background	4.44209433056
+Channel 2 Sigma Above Background	6.17850940612
+Channel 3 Sigma Above Background	4.17433380976
+Channel 4 Sigma Above Background	6.66084840005
+Channel 1 Source Rate Required to alarm	26.9152321186
+Channel 2 Source Rate Required to alarm	21.7301603307
+Channel 3 Source Rate Required to alarm	13.9686960021
+Channel 4 Source Rate Required to alarm	36.9292296156
+Channel 1 Probability to Alarm	0.0694093708152
+Channel 2 Probability to Alarm	0.245121546346
+Channel 3 Probability to Alarm	0.0336418137113
+Channel 4 Probability to Alarm	0.664622601326
+Name	Polimaster
+Title	2 Second Integration time
+Alarm Setting	9.8
+Channel 1 Bin	33
+Channel 2 Bin	120
+Channel 3 Bin	240
+Channel 4 Bin	745
+Channel 1 Source Hits Per Sec	12.2
+Channel 2 Source Hits Per Sec	13.7
+Channel 3 Source Hits Per Sec	5.95
+Channel 4 Source Hits Per Sec	25.1
+Channel 1 Source Sigma Hit Rate	2.46981780705
+Channel 2 Source Sigma Hit Rate	2.61725046566
+Channel 3 Source Sigma Hit Rate	1.72481883107
+Channel 4 Source Sigma Hit Rate	3.54259791678
+Channel 1 Background Hit Rate	7.543
+Channel 2 Background Hit Rate	4.9167
+Channel 3 Background Hit Rate	2.0317
+Channel 4 Background Hit Rate	14.2
+Channel 1 Sigma Background Hit Rate	2.746452257
+Channel 2 Sigma Background Hit Rate	2.21736329906
+Channel 3 Sigma Background Hit Rate	1.42537714307
+Channel 4 Sigma Background Hit Rate	3.76828873628
+Combined Hit Rate Channel 1	19.743
+Combined Hit Rate Channel 2	18.616699999999998
+Combined Hit Rate Channel 3	7.9817
+Combined Hit Rate Channel 4	39.3
+Sigma Combined Hit Rate Channel 1	3.69364318796
+Sigma Combined Hit Rate Channel 2	3.43026238064
+Sigma Combined Hit Rate Channel 3	2.2375656415
+Sigma Combined Hit Rate Channel 4	5.17204021639
+Channel 1 Sigma Above Background	4.44209433056
+Channel 2 Sigma Above Background	6.17850940612
+Channel 3 Sigma Above Background	4.17433380976
+Channel 4 Sigma Above Background	6.66084840005
+Channel 1 Source Rate Required to alarm	26.9152321186
+Channel 2 Source Rate Required to alarm	21.7301603307
+Channel 3 Source Rate Required to alarm	13.9686960021
+Channel 4 Source Rate Required to alarm	36.9292296156
+Channel 1 Probability to Alarm	0.0694093708152
+Channel 2 Probability to Alarm	0.245121546346
+Channel 3 Probability to Alarm	0.0336418137113
+Channel 4 Probability to Alarm	0.664622601326\ \ \ \ \ \ \ \ \ \  \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 
+
+\---------------------- /home/jcalderon/NewFolder/prd_scripts/jun8_prd_451-563cm_srce_rns/jun8_20sec__563cm_source_all_.dat ----------------------
+ Date:	14/6/2016
+ time:	'10:13:31'
+\--------------Source Sim Time	20.0 ----------
+Actual Distances	[282, 316, 349, 372, 406, 451, 488, 525, 563]
+Actual Probability	[1, 1, 1, 1, 1, 1, 0.8, 0.63, 0.3]
+Name	Polimaster
+Title	1 Second Integration time
+Alarm Setting	9.8
+Channel 1 Bin	33
+Channel 2 Bin	120
+Channel 3 Bin	240
+Channel 4 Bin	745
+Channel 1 Source Hits Per Sec	10.1
+Channel 2 Source Hits Per Sec	12.0
+Channel 3 Source Hits Per Sec	5.9
+Channel 4 Source Hits Per Sec	21.8
+Channel 1 Source Sigma Hit Rate	3.17804971641
+Channel 2 Source Sigma Hit Rate	3.46410161514
+Channel 3 Source Sigma Hit Rate	2.4289915603
+Channel 4 Source Sigma Hit Rate	4.66904701197
+Channel 1 Background Hit Rate	7.543
+Channel 2 Background Hit Rate	4.9167
+Channel 3 Background Hit Rate	2.0317
+Channel 4 Background Hit Rate	14.2
+Channel 1 Sigma Background Hit Rate	2.746452257
+Channel 2 Sigma Background Hit Rate	2.21736329906
+Channel 3 Sigma Background Hit Rate	1.42537714307
+Channel 4 Sigma Background Hit Rate	3.76828873628
+Combined Hit Rate Channel 1	17.643
+Combined Hit Rate Channel 2	16.9167
+Combined Hit Rate Channel 3	7.9317
+Combined Hit Rate Channel 4	36.0
+Sigma Combined Hit Rate Channel 1	3.88407003026
+Sigma Combined Hit Rate Channel 2	3.13582525023
+Sigma Combined Hit Rate Channel 3	2.01578768723
+Sigma Combined Hit Rate Channel 4	5.32916503779
+Channel 1 Sigma Above Background	3.67747153596
+Channel 2 Sigma Above Background	5.41183305645
+Channel 3 Sigma Above Background	4.13925537439
+Channel 4 Sigma Above Background	5.78511932753
+Channel 1 Source Rate Required to alarm	26.9152321186
+Channel 2 Source Rate Required to alarm	21.7301603307
+Channel 3 Source Rate Required to alarm	13.9686960021
+Channel 4 Source Rate Required to alarm	36.9292296156
+Channel 1 Probability to Alarm	0.0228373329649
+Channel 2 Probability to Alarm	0.133915919795
+Channel 3 Probability to Alarm	0.0322007723134
+Channel 4 Probability to Alarm	0.455830018246
+Name	Polimaster
+Title	2 Second Integration time
+Alarm Setting	9.8
+Channel 1 Bin	33
+Channel 2 Bin	120
+Channel 3 Bin	240
+Channel 4 Bin	745
+Channel 1 Source Hits Per Sec	10.1
+Channel 2 Source Hits Per Sec	12.0
+Channel 3 Source Hits Per Sec	5.9
+Channel 4 Source Hits Per Sec	21.8
+Channel 1 Source Sigma Hit Rate	2.24722050542
+Channel 2 Source Sigma Hit Rate	2.44948974278
+Channel 3 Source Sigma Hit Rate	1.71755640373
+Channel 4 Source Sigma Hit Rate	3.30151480384
+Channel 1 Background Hit Rate	7.543
+Channel 2 Background Hit Rate	4.9167
+Channel 3 Background Hit Rate	2.0317
+Channel 4 Background Hit Rate	14.2
+Channel 1 Sigma Background Hit Rate	2.746452257
+Channel 2 Sigma Background Hit Rate	2.21736329906
+Channel 3 Sigma Background Hit Rate	1.42537714307
+Channel 4 Sigma Background Hit Rate	3.76828873628
+Combined Hit Rate Channel 1	17.643
+Combined Hit Rate Channel 2	16.9167
+Combined Hit Rate Channel 3	7.9317
+Combined Hit Rate Channel 4	36.0
+Sigma Combined Hit Rate Channel 1	3.54866171958
+Sigma Combined Hit Rate Channel 2	3.30404297793
+Sigma Combined Hit Rate Channel 3	2.23197222205
+Sigma Combined Hit Rate Channel 4	5.00999001995
+Channel 1 Sigma Above Background	3.67747153596
+Channel 2 Sigma Above Background	5.41183305645
+Channel 3 Sigma Above Background	4.13925537439
+Channel 4 Sigma Above Background	5.78511932753
+Channel 1 Source Rate Required to alarm	26.9152321186
+Channel 2 Source Rate Required to alarm	21.7301603307
+Channel 3 Source Rate Required to alarm	13.9686960021
+Channel 4 Source Rate Required to alarm	36.9292296156
+Channel 1 Probability to Alarm	0.0228373329649
+Channel 2 Probability to Alarm	0.133915919795
+Channel 3 Probability to Alarm	0.0322007723134
+Channel 4 Probability to Alarm	0.455830018246\ \ \ \ \ \ \ \ \ \  \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 
+
+\---------------------- /home/jcalderon/NewFolder/prd_scripts/jun8_prd_451-563cm_srce_rns/jun8_451cm_source_all_.dat ----------------------
+ Date:	14/6/2016
+ time:	'10:15:57'
+\--------------Source Sim Time	20.0 ----------
+Actual Distances	[282, 316, 349, 372, 406, 451, 488, 525, 563]
+Actual Probability	[1, 1, 1, 1, 1, 1, 0.8, 0.63, 0.3]
+Name	Polimaster
+Title	1 Second Integration time
+Alarm Setting	9.8
+Channel 1 Bin	33
+Channel 2 Bin	120
+Channel 3 Bin	240
+Channel 4 Bin	745
+Channel 1 Source Hits Per Sec	15.4
+Channel 2 Source Hits Per Sec	17.5
+Channel 3 Source Hits Per Sec	8.85
+Channel 4 Source Hits Per Sec	32.25
+Channel 1 Source Sigma Hit Rate	3.92428337407
+Channel 2 Source Sigma Hit Rate	4.18330013267
+Channel 3 Source Sigma Hit Rate	2.97489495613
+Channel 4 Source Sigma Hit Rate	5.6789083458
+Channel 1 Background Hit Rate	7.543
+Channel 2 Background Hit Rate	4.9167
+Channel 3 Background Hit Rate	2.0317
+Channel 4 Background Hit Rate	14.2
+Channel 1 Sigma Background Hit Rate	2.746452257
+Channel 2 Sigma Background Hit Rate	2.21736329906
+Channel 3 Sigma Background Hit Rate	1.42537714307
+Channel 4 Sigma Background Hit Rate	3.76828873628
+Combined Hit Rate Channel 1	22.943
+Combined Hit Rate Channel 2	22.4167
+Combined Hit Rate Channel 3	10.881699999999999
+Combined Hit Rate Channel 4	46.45
+Sigma Combined Hit Rate Channel 1	3.88407003026
+Sigma Combined Hit Rate Channel 2	3.13582525023
+Sigma Combined Hit Rate Channel 3	2.01578768723
+Sigma Combined Hit Rate Channel 4	5.32916503779
+Channel 1 Sigma Above Background	5.60723382711
+Channel 2 Sigma Above Background	7.89225654066
+Channel 3 Sigma Above Background	6.20888306158
+Channel 4 Sigma Above Background	8.5582613905
+Channel 1 Source Rate Required to alarm	26.9152321186
+Channel 2 Source Rate Required to alarm	21.7301603307
+Channel 3 Source Rate Required to alarm	13.9686960021
+Channel 4 Source Rate Required to alarm	36.9292296156
+Channel 1 Probability to Alarm	0.224027314862
+Channel 2 Probability to Alarm	0.563290822689
+Channel 3 Probability to Alarm	0.207874575185
+Channel 4 Probability to Alarm	0.932128434609
+Name	Polimaster
+Title	2 Second Integration time
+Alarm Setting	9.8
+Channel 1 Bin	33
+Channel 2 Bin	120
+Channel 3 Bin	240
+Channel 4 Bin	745
+Channel 1 Source Hits Per Sec	15.4
+Channel 2 Source Hits Per Sec	17.5
+Channel 3 Source Hits Per Sec	8.85
+Channel 4 Source Hits Per Sec	32.25
+Channel 1 Source Sigma Hit Rate	2.7748873851
+Channel 2 Source Sigma Hit Rate	2.95803989155
+Channel 3 Source Sigma Hit Rate	2.1035683968
+Channel 4 Source Sigma Hit Rate	4.01559460105
+Channel 1 Background Hit Rate	7.543
+Channel 2 Background Hit Rate	4.9167
+Channel 3 Background Hit Rate	2.0317
+Channel 4 Background Hit Rate	14.2
+Channel 1 Sigma Background Hit Rate	2.746452257
+Channel 2 Sigma Background Hit Rate	2.21736329906
+Channel 3 Sigma Background Hit Rate	1.42537714307
+Channel 4 Sigma Background Hit Rate	3.76828873628
+Combined Hit Rate Channel 1	22.943
+Combined Hit Rate Channel 2	22.4167
+Combined Hit Rate Channel 3	10.881699999999999
+Combined Hit Rate Channel 4	46.45
+Sigma Combined Hit Rate Channel 1	3.90422847692
+Sigma Combined Hit Rate Channel 2	3.69685001048
+Sigma Combined Hit Rate Channel 3	2.54100373868
+Sigma Combined Hit Rate Channel 4	5.5068139609
+Channel 1 Sigma Above Background	5.60723382711
+Channel 2 Sigma Above Background	7.89225654066
+Channel 3 Sigma Above Background	6.20888306158
+Channel 4 Sigma Above Background	8.5582613905
+Channel 1 Source Rate Required to alarm	26.9152321186
+Channel 2 Source Rate Required to alarm	21.7301603307
+Channel 3 Source Rate Required to alarm	13.9686960021
+Channel 4 Source Rate Required to alarm	36.9292296156
+Channel 1 Probability to Alarm	0.224027314862
+Channel 2 Probability to Alarm	0.563290822689
+Channel 3 Probability to Alarm	0.207874575185
+Channel 4 Probability to Alarm	0.932128434609\ \ \ \ \ \ \ \ \ \  \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 
+
+\---------------------- /home/jcalderon/NewFolder/prd_scripts/jun8_prd_451-563cm_srce_rns/jun8_488cm_source_all_.dat ----------------------
+ Date:	14/6/2016
+ time:	'10:15:58'
+\--------------Source Sim Time	20.0 ----------
+Actual Distances	[282, 316, 349, 372, 406, 451, 488, 525, 563]
+Actual Probability	[1, 1, 1, 1, 1, 1, 0.8, 0.63, 0.3]
+Name	Polimaster
+Title	1 Second Integration time
+Alarm Setting	9.8
+Channel 1 Bin	33
+Channel 2 Bin	120
+Channel 3 Bin	240
+Channel 4 Bin	745
+Channel 1 Source Hits Per Sec	15.8
+Channel 2 Source Hits Per Sec	17.45
+Channel 3 Source Hits Per Sec	6.4
+Channel 4 Source Hits Per Sec	30.05
+Channel 1 Source Sigma Hit Rate	3.97492138287
+Channel 2 Source Sigma Hit Rate	4.17731971484
+Channel 3 Source Sigma Hit Rate	2.52982212813
+Channel 4 Source Sigma Hit Rate	5.48178802947
+Channel 1 Background Hit Rate	7.543
+Channel 2 Background Hit Rate	4.9167
+Channel 3 Background Hit Rate	2.0317
+Channel 4 Background Hit Rate	14.2
+Channel 1 Sigma Background Hit Rate	2.746452257
+Channel 2 Sigma Background Hit Rate	2.21736329906
+Channel 3 Sigma Background Hit Rate	1.42537714307
+Channel 4 Sigma Background Hit Rate	3.76828873628
+Combined Hit Rate Channel 1	23.343
+Combined Hit Rate Channel 2	22.366699999999998
+Combined Hit Rate Channel 3	8.4317
+Combined Hit Rate Channel 4	44.25
+Sigma Combined Hit Rate Channel 1	3.88407003026
+Sigma Combined Hit Rate Channel 2	3.13582525023
+Sigma Combined Hit Rate Channel 3	2.01578768723
+Sigma Combined Hit Rate Channel 4	5.32916503779
+Channel 1 Sigma Above Background	5.75287626417
+Channel 2 Sigma Above Background	7.86970723626
+Channel 3 Sigma Above Background	4.49003972815
+Channel 4 Sigma Above Background	7.97444200882
+Channel 1 Source Rate Required to alarm	26.9152321186
+Channel 2 Source Rate Required to alarm	21.7301603307
+Channel 3 Source Rate Required to alarm	13.9686960021
+Channel 4 Source Rate Required to alarm	36.9292296156
+Channel 1 Probability to Alarm	0.250352922173
+Channel 2 Probability to Alarm	0.55914260989
+Channel 3 Probability to Alarm	0.0487614260419
+Channel 4 Probability to Alarm	0.880178278575
+Name	Polimaster
+Title	2 Second Integration time
+Alarm Setting	9.8
+Channel 1 Bin	33
+Channel 2 Bin	120
+Channel 3 Bin	240
+Channel 4 Bin	745
+Channel 1 Source Hits Per Sec	15.8
+Channel 2 Source Hits Per Sec	17.45
+Channel 3 Source Hits Per Sec	6.4
+Channel 4 Source Hits Per Sec	30.05
+Channel 1 Source Sigma Hit Rate	2.81069386451
+Channel 2 Source Sigma Hit Rate	2.95381109755
+Channel 3 Source Sigma Hit Rate	1.788854382
+Channel 4 Source Sigma Hit Rate	3.87620948866
+Channel 1 Background Hit Rate	7.543
+Channel 2 Background Hit Rate	4.9167
+Channel 3 Background Hit Rate	2.0317
+Channel 4 Background Hit Rate	14.2
+Channel 1 Sigma Background Hit Rate	2.746452257
+Channel 2 Sigma Background Hit Rate	2.21736329906
+Channel 3 Sigma Background Hit Rate	1.42537714307
+Channel 4 Sigma Background Hit Rate	3.76828873628
+Combined Hit Rate Channel 1	23.343
+Combined Hit Rate Channel 2	22.366699999999998
+Combined Hit Rate Channel 3	8.4317
+Combined Hit Rate Channel 4	44.25
+Sigma Combined Hit Rate Channel 1	3.92975826229
+Sigma Combined Hit Rate Channel 2	3.69346720576
+Sigma Combined Hit Rate Channel 3	2.28729097406
+Sigma Combined Hit Rate Channel 4	5.40601516831
+Channel 1 Sigma Above Background	5.75287626417
+Channel 2 Sigma Above Background	7.86970723626
+Channel 3 Sigma Above Background	4.49003972815
+Channel 4 Sigma Above Background	7.97444200882
+Channel 1 Source Rate Required to alarm	26.9152321186
+Channel 2 Source Rate Required to alarm	21.7301603307
+Channel 3 Source Rate Required to alarm	13.9686960021
+Channel 4 Source Rate Required to alarm	36.9292296156
+Channel 1 Probability to Alarm	0.250352922173
+Channel 2 Probability to Alarm	0.55914260989
+Channel 3 Probability to Alarm	0.0487614260419
+Channel 4 Probability to Alarm	0.880178278575\ \ \ \ \ \ \ \ \ \  \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 
+
+\---------------------- /home/jcalderon/NewFolder/prd_scripts/jun8_prd_451-563cm_srce_rns/jun8_525cm_source_all_.dat ----------------------
+ Date:	14/6/2016
+ time:	'10:15:58'
+\--------------Source Sim Time	20.0 ----------
+Actual Distances	[282, 316, 349, 372, 406, 451, 488, 525, 563]
+Actual Probability	[1, 1, 1, 1, 1, 1, 0.8, 0.63, 0.3]
+Name	Polimaster
+Title	1 Second Integration time
+Alarm Setting	9.8
+Channel 1 Bin	33
+Channel 2 Bin	120
+Channel 3 Bin	240
+Channel 4 Bin	745
+Channel 1 Source Hits Per Sec	12.2
+Channel 2 Source Hits Per Sec	13.7
+Channel 3 Source Hits Per Sec	5.95
+Channel 4 Source Hits Per Sec	25.1
+Channel 1 Source Sigma Hit Rate	3.49284983931
+Channel 2 Source Sigma Hit Rate	3.70135110466
+Channel 3 Source Sigma Hit Rate	2.43926218353
+Channel 4 Source Sigma Hit Rate	5.00999001995
+Channel 1 Background Hit Rate	7.543
+Channel 2 Background Hit Rate	4.9167
+Channel 3 Background Hit Rate	2.0317
+Channel 4 Background Hit Rate	14.2
+Channel 1 Sigma Background Hit Rate	2.746452257
+Channel 2 Sigma Background Hit Rate	2.21736329906
+Channel 3 Sigma Background Hit Rate	1.42537714307
+Channel 4 Sigma Background Hit Rate	3.76828873628
+Combined Hit Rate Channel 1	19.743
+Combined Hit Rate Channel 2	18.616699999999998
+Combined Hit Rate Channel 3	7.9817
+Combined Hit Rate Channel 4	39.3
+Sigma Combined Hit Rate Channel 1	3.88407003026
+Sigma Combined Hit Rate Channel 2	3.13582525023
+Sigma Combined Hit Rate Channel 3	2.01578768723
+Sigma Combined Hit Rate Channel 4	5.32916503779
+Channel 1 Sigma Above Background	4.44209433056
+Channel 2 Sigma Above Background	6.17850940612
+Channel 3 Sigma Above Background	4.17433380976
+Channel 4 Sigma Above Background	6.66084840005
+Channel 1 Source Rate Required to alarm	26.9152321186
+Channel 2 Source Rate Required to alarm	21.7301603307
+Channel 3 Source Rate Required to alarm	13.9686960021
+Channel 4 Source Rate Required to alarm	36.9292296156
+Channel 1 Probability to Alarm	0.0694093708152
+Channel 2 Probability to Alarm	0.245121546346
+Channel 3 Probability to Alarm	0.0336418137113
+Channel 4 Probability to Alarm	0.664622601326
+Name	Polimaster
+Title	2 Second Integration time
+Alarm Setting	9.8
+Channel 1 Bin	33
+Channel 2 Bin	120
+Channel 3 Bin	240
+Channel 4 Bin	745
+Channel 1 Source Hits Per Sec	12.2
+Channel 2 Source Hits Per Sec	13.7
+Channel 3 Source Hits Per Sec	5.95
+Channel 4 Source Hits Per Sec	25.1
+Channel 1 Source Sigma Hit Rate	2.46981780705
+Channel 2 Source Sigma Hit Rate	2.61725046566
+Channel 3 Source Sigma Hit Rate	1.72481883107
+Channel 4 Source Sigma Hit Rate	3.54259791678
+Channel 1 Background Hit Rate	7.543
+Channel 2 Background Hit Rate	4.9167
+Channel 3 Background Hit Rate	2.0317
+Channel 4 Background Hit Rate	14.2
+Channel 1 Sigma Background Hit Rate	2.746452257
+Channel 2 Sigma Background Hit Rate	2.21736329906
+Channel 3 Sigma Background Hit Rate	1.42537714307
+Channel 4 Sigma Background Hit Rate	3.76828873628
+Combined Hit Rate Channel 1	19.743
+Combined Hit Rate Channel 2	18.616699999999998
+Combined Hit Rate Channel 3	7.9817
+Combined Hit Rate Channel 4	39.3
+Sigma Combined Hit Rate Channel 1	3.69364318796
+Sigma Combined Hit Rate Channel 2	3.43026238064
+Sigma Combined Hit Rate Channel 3	2.2375656415
+Sigma Combined Hit Rate Channel 4	5.17204021639
+Channel 1 Sigma Above Background	4.44209433056
+Channel 2 Sigma Above Background	6.17850940612
+Channel 3 Sigma Above Background	4.17433380976
+Channel 4 Sigma Above Background	6.66084840005
+Channel 1 Source Rate Required to alarm	26.9152321186
+Channel 2 Source Rate Required to alarm	21.7301603307
+Channel 3 Source Rate Required to alarm	13.9686960021
+Channel 4 Source Rate Required to alarm	36.9292296156
+Channel 1 Probability to Alarm	0.0694093708152
+Channel 2 Probability to Alarm	0.245121546346
+Channel 3 Probability to Alarm	0.0336418137113
+Channel 4 Probability to Alarm	0.664622601326\ \ \ \ \ \ \ \ \ \  \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 
+
+\---------------------- /home/jcalderon/NewFolder/prd_scripts/jun8_prd_451-563cm_srce_rns/jun8_20sec__563cm_source_all_.dat ----------------------
+ Date:	14/6/2016
+ time:	'10:15:58'
+\--------------Source Sim Time	20.0 ----------
+Actual Distances	[282, 316, 349, 372, 406, 451, 488, 525, 563]
+Actual Probability	[1, 1, 1, 1, 1, 1, 0.8, 0.63, 0.3]
+Name	Polimaster
+Title	1 Second Integration time
+Alarm Setting	9.8
+Channel 1 Bin	33
+Channel 2 Bin	120
+Channel 3 Bin	240
+Channel 4 Bin	745
+Channel 1 Source Hits Per Sec	10.1
+Channel 2 Source Hits Per Sec	12.0
+Channel 3 Source Hits Per Sec	5.9
+Channel 4 Source Hits Per Sec	21.8
+Channel 1 Source Sigma Hit Rate	3.17804971641
+Channel 2 Source Sigma Hit Rate	3.46410161514
+Channel 3 Source Sigma Hit Rate	2.4289915603
+Channel 4 Source Sigma Hit Rate	4.66904701197
+Channel 1 Background Hit Rate	7.543
+Channel 2 Background Hit Rate	4.9167
+Channel 3 Background Hit Rate	2.0317
+Channel 4 Background Hit Rate	14.2
+Channel 1 Sigma Background Hit Rate	2.746452257
+Channel 2 Sigma Background Hit Rate	2.21736329906
+Channel 3 Sigma Background Hit Rate	1.42537714307
+Channel 4 Sigma Background Hit Rate	3.76828873628
+Combined Hit Rate Channel 1	17.643
+Combined Hit Rate Channel 2	16.9167
+Combined Hit Rate Channel 3	7.9317
+Combined Hit Rate Channel 4	36.0
+Sigma Combined Hit Rate Channel 1	3.88407003026
+Sigma Combined Hit Rate Channel 2	3.13582525023
+Sigma Combined Hit Rate Channel 3	2.01578768723
+Sigma Combined Hit Rate Channel 4	5.32916503779
+Channel 1 Sigma Above Background	3.67747153596
+Channel 2 Sigma Above Background	5.41183305645
+Channel 3 Sigma Above Background	4.13925537439
+Channel 4 Sigma Above Background	5.78511932753
+Channel 1 Source Rate Required to alarm	26.9152321186
+Channel 2 Source Rate Required to alarm	21.7301603307
+Channel 3 Source Rate Required to alarm	13.9686960021
+Channel 4 Source Rate Required to alarm	36.9292296156
+Channel 1 Probability to Alarm	0.0228373329649
+Channel 2 Probability to Alarm	0.133915919795
+Channel 3 Probability to Alarm	0.0322007723134
+Channel 4 Probability to Alarm	0.455830018246
+Name	Polimaster
+Title	2 Second Integration time
+Alarm Setting	9.8
+Channel 1 Bin	33
+Channel 2 Bin	120
+Channel 3 Bin	240
+Channel 4 Bin	745
+Channel 1 Source Hits Per Sec	10.1
+Channel 2 Source Hits Per Sec	12.0
+Channel 3 Source Hits Per Sec	5.9
+Channel 4 Source Hits Per Sec	21.8
+Channel 1 Source Sigma Hit Rate	2.24722050542
+Channel 2 Source Sigma Hit Rate	2.44948974278
+Channel 3 Source Sigma Hit Rate	1.71755640373
+Channel 4 Source Sigma Hit Rate	3.30151480384
+Channel 1 Background Hit Rate	7.543
+Channel 2 Background Hit Rate	4.9167
+Channel 3 Background Hit Rate	2.0317
+Channel 4 Background Hit Rate	14.2
+Channel 1 Sigma Background Hit Rate	2.746452257
+Channel 2 Sigma Background Hit Rate	2.21736329906
+Channel 3 Sigma Background Hit Rate	1.42537714307
+Channel 4 Sigma Background Hit Rate	3.76828873628
+Combined Hit Rate Channel 1	17.643
+Combined Hit Rate Channel 2	16.9167
+Combined Hit Rate Channel 3	7.9317
+Combined Hit Rate Channel 4	36.0
+Sigma Combined Hit Rate Channel 1	3.54866171958
+Sigma Combined Hit Rate Channel 2	3.30404297793
+Sigma Combined Hit Rate Channel 3	2.23197222205
+Sigma Combined Hit Rate Channel 4	5.00999001995
+Channel 1 Sigma Above Background	3.67747153596
+Channel 2 Sigma Above Background	5.41183305645
+Channel 3 Sigma Above Background	4.13925537439
+Channel 4 Sigma Above Background	5.78511932753
+Channel 1 Source Rate Required to alarm	26.9152321186
+Channel 2 Source Rate Required to alarm	21.7301603307
+Channel 3 Source Rate Required to alarm	13.9686960021
+Channel 4 Source Rate Required to alarm	36.9292296156
+Channel 1 Probability to Alarm	0.0228373329649
+Channel 2 Probability to Alarm	0.133915919795
+Channel 3 Probability to Alarm	0.0322007723134
+Channel 4 Probability to Alarm	0.455830018246
