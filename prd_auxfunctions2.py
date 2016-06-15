@@ -80,9 +80,11 @@ class Polimaster(object):
     itime1 = 1
     itime2 = 2
     mass_kg = mass/1000
-    actualprob = [1,1,1,1,1,1,.8,.63,.3]
-    actualdist = [282,316,349,372,406,451,488,525,563]
-    
+    actualprob =    [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 0.8, .63, .03, 0.0, 0.0, 0.0, 0.0, 0.0]
+    actualdist =    [282, 316, 349, 372, 406, 451, 488, 525, 563, 601, 638, 676, 789, 902]
+    actualsig_pos = [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, .10, .13, .11, .09, .09, .09, .09, .09]
+    actualsig_neg = [.09, .09, .09, .09, .09, .09, .15, .15, .02, .00, .00, .00, .00, .00]
+        
     def __init__(self,sortdat):
 
         self.s_time = sortdat.time
@@ -108,16 +110,17 @@ class Polimaster(object):
         self.high_cut = sortdat.PM_chan[3]
         self.source_time = sortdat.time
 
-
 class Ste(object):
-
+    codename = 'Sierra'
     alarm = 9.8    # sigma above bkrd alarm setting
     mass = 22.748  # mass of STE crystal
-    itime = 1   # integration time guess
+    itime = 1      # integration time guess
     high_cut = 3000 
     mass_kg = mass/1000
-    actualdist = [282, 316, 349, 372, 406, 451, 488, 525, 563]
-    actualprob = [1.0, 1.00, 0.75, 0.53, 0.23, 0.08, 0.08, 0.05, 0.00, 0.00, 0.00 ]
+    actualdist =    [282, 316, 349, 372, 406, 451, 488, 525, 563, 601, 638, 676, 789, 902]
+    actualprob =    [1.0, 1.0, .75, .53, .23, .08, .08, .05, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+    actualsig_pos = [0.0, 0.0, .11, .15, .15, .13, .13, .12, .09, .09, .09, .09, .09, .09]
+    actualsig_neg = [.09, .09, .15, .15, .10, .05, .05, .04, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
 
     def __init__(self,sortdat):
         self.name = sortdat.detector1
@@ -132,7 +135,7 @@ class Ste(object):
      
 
 class Minirad(object):
-
+    codename = 'Tango'
     alarm = 0     # from spec sheet default
     mass = 14.28    # mass of minirad crystal 
     itime = 2    # from spec sheet doesnt really matters
@@ -143,9 +146,10 @@ class Minirad(object):
     levels = np.array(np.arange(2,10)) #alarm lvl at each excess_value
     alarm_con = dict(zip(ex_values,levels)) #dict mapping of ex and lvl
     alarm_con[0] = 1
-    actualdist = [282, 316, 349, 372, 406, 451, 488, 525, 563, 601, 638, 676, 789, 902]
-    actualprob = [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, .95, .88, .73, .55, .10, 0.0]
-    
+    actualdist =    [282, 316, 349, 372, 406, 451, 488, 525, 563, 601, 638, 676, 789, 902]
+    actualprob =    [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, .95, .88, .73, .55, .10, 0.0]
+    actualsig_pos = [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, .04, .07, .11, .14, .13, .09] 
+    actualsig_neg = [.09, .09, .09, .09, .09, .09, .09, .09, .12, .14, .15, .15, .06, 0.0]
 
     def __init__(self,sortdat):
         self.name = sortdat.detector3
@@ -176,14 +180,14 @@ class Bkr_poli(object):
     rate = [7.543,4.9167,2.0317,14.2]
     itime1 = 1
     itime2 = 2
+    broundtime = 20*60 #20 min
 
     def __init__(self,sortdat):
         self.sig_ch1 = np.sqrt(self.rate[0]) #how poli computes sigma  
-        self.sig_ch2 = np.sqrt(self.rate[1])  
-        self.sig_ch3 = np.sqrt(self.rate[2])  
-        self.sig_ch4 = np.sqrt(self.rate[3])  
-        self.real_sig = np.sqrt(self.rate[0]*self.itime1) #how statistics computes sigma
-        self.real_sig1 = np.sqrt(self.rate[0]*self.itime2) 
+        self.sig_ch2 = np.sqrt(self.rate[1]) 
+        self.sig_ch3 = np.sqrt(self.rate[2]) 
+        self.sig_ch4 = np.sqrt(self.rate[3]) 
+        self.real_sig = np.sqrt(np.array(self.rate))*self.broundtime #how statistics computes sigma
         self.source_time = sortdat.time
 
 # calculate statistics and make dictionary
@@ -191,6 +195,8 @@ def stestat(detector,background):
 
     stat = OrderedDict() 
     stat['Name'] = detector.name
+    stat['actual sigma +'] = detector.actualsig_pos
+    stat['actual sigma -'] = detector.actualsig_neg
     stat['Alarm Setting'] = detector.alarm
     stat['Micro Rad Per Hr'] = ( (100*detector.t_energy*conv) / (detector.mass_kg*(detector.source_time/3600)) )*(10**6)    
     stat['Sigma Rad'] = ((100*detector.sig_energy*conv) / (detector.mass_kg*(detector.source_time/3600)) )*(10**6)    
@@ -215,6 +221,8 @@ def ministat(detector, background):
     stat['Alarm Setting'] = detector.alarm
     stat['Actual Distances'] = detector.actualdist
     stat['Actual Probability'] = detector.actualprob
+    stat['Actual Sigma +'] = detector.actualsig_pos
+    stat['Actual Sigma -'] = detector.actualsig_neg
     stat['Micro Rad Per Hr'] = ( (100*detector.t_energy*conv) / (detector.mass_kg*(detector.source_time/3600)) )*(10**6)    
     stat['Sigma Rad'] = ((100*detector.sig_energy*conv) / (detector.mass_kg*(detector.source_time/3600)) )*(10**6)    
     stat['Source Hits Per Sec'] = detector.rate
@@ -239,6 +247,10 @@ def polistat(poli,background):
     stat_1sec = OrderedDict()
     stat_1sec['Actual Distances'] = poli.actualdist
     stat_1sec['Actual Probability'] = poli.actualprob
+    stat_1sec['Actual Probability'] = poli.actualprob
+    stat_1sec['Actual Sigma +'] = poli.actualsig_pos
+    stat_1sec['Actual Sigma -'] = poli.actualsig_neg
+
     stat_1sec['Name'] = poli.name
     stat_1sec['Title'] = '1 Second Integration time'
     stat_1sec['Alarm Setting'] = poli.alarm
@@ -252,10 +264,10 @@ def polistat(poli,background):
     stat_1sec['Channel 2 Source Hits Per Sec'] = poli.ch2_rate 
     stat_1sec['Channel 3 Source Hits Per Sec'] = poli.ch3_rate 
     stat_1sec['Channel 4 Source Hits Per Sec'] = poli.ch4_rate 
-    stat_1sec['Channel 1 Source Sigma Hit Rate'] = np.sqrt(poli.ch1_rate*poli.itime1) / poli.itime1#itime1 just =1  
-    stat_1sec['Channel 2 Source Sigma Hit Rate'] = np.sqrt(poli.ch2_rate*poli.itime1) / poli.itime1  
-    stat_1sec['Channel 3 Source Sigma Hit Rate'] = np.sqrt(poli.ch3_rate*poli.itime1) / poli.itime1 
-    stat_1sec['Channel 4 Source Sigma Hit Rate'] = np.sqrt(poli.ch4_rate*poli.itime1) / poli.itime1
+    stat_1sec['Source Sigma Hit Rate'] = np.sqrt(poli.ch1_rate*poli.itime1)/poli.s_time  
+    stat_1sec['Channel 2 Source Sigma Hit Rate'] = np.sqrt(poli.ch2_rate*poli.itime1)/poli.s_time  
+    stat_1sec['Channel 3 Source Sigma Hit Rate'] = np.sqrt(poli.ch3_rate*poli.itime1)/poli.s_time 
+    stat_1sec['Channel 4 Source Sigma Hit Rate'] = np.sqrt(poli.ch4_rate*poli.itime1)/poli.s_time 
 
     stat_1sec['Channel 1 Background Hit Rate'] = background.rate[0] 
     stat_1sec['Channel 2 Background Hit Rate'] = background.rate[1] 
@@ -265,6 +277,9 @@ def polistat(poli,background):
     stat_1sec['Channel 2 Sigma Background Hit Rate'] = background.sig_ch2 
     stat_1sec['Channel 3 Sigma Background Hit Rate'] = background.sig_ch3 
     stat_1sec['Channel 4 Sigma Background Hit Rate'] = background.sig_ch4 
+    stat_1sec['Regular Background Sigma'] = background.real_sig
+
+
 
     stat_1sec['Combined Hit Rate Channel 1'] = poli.ch1_rate + background.rate[0]
     stat_1sec['Combined Hit Rate Channel 2'] = poli.ch2_rate + background.rate[1]
@@ -274,7 +289,7 @@ def polistat(poli,background):
     stat_1sec['Sigma Combined Hit Rate Channel 2'] = np.sqrt( stat_1sec['Channel 2 Sigma Background Hit Rate']**2 + (background.sig_ch2)**2 )
     stat_1sec['Sigma Combined Hit Rate Channel 3'] = np.sqrt( stat_1sec['Channel 3 Sigma Background Hit Rate']**2 + (background.sig_ch3)**2 )
     stat_1sec['Sigma Combined Hit Rate Channel 4'] = np.sqrt( stat_1sec['Channel 4 Sigma Background Hit Rate']**2 + (background.sig_ch4)**2 )
-    
+
 
     stat_1sec['Channel 1 Sigma Above Background'] = stat_1sec['Channel 1 Source Hits Per Sec'] / background.sig_ch1
     stat_1sec['Channel 2 Sigma Above Background'] = stat_1sec['Channel 2 Source Hits Per Sec'] / background.sig_ch2
@@ -324,6 +339,8 @@ def polistat(poli,background):
     stat_2sec['Channel 2 Source Sigma Hit Rate'] = np.sqrt(poli.ch2_rate*poli.itime2) / poli.itime2  
     stat_2sec['Channel 3 Source Sigma Hit Rate'] = np.sqrt(poli.ch3_rate*poli.itime2) / poli.itime2 
     stat_2sec['Channel 4 Source Sigma Hit Rate'] = np.sqrt(poli.ch4_rate*poli.itime2) / poli.itime2
+    stat_2sec['ch1 sigma stat all rate'] =  [ np.sqrt(poli.ch1_rate*poli.itime2) / poli.itime2, np.sqrt(poli.ch2_rate*poli.itime2) / poli.itime2, np.sqrt(poli.ch3_rate*poli.itime2) / poli.itime2, np.sqrt(poli.ch4_rate*poli.itime2) / poli.itime2]
+
 
     stat_2sec['Channel 1 Background Hit Rate'] = background.rate[0] 
     stat_2sec['Channel 2 Background Hit Rate'] = background.rate[1]
@@ -373,6 +390,7 @@ def polistat(poli,background):
 
     return stat_1sec, stat_2sec
 
+
  #concatanate an array of files for storage
 def concat(files, outname):
     with open(outname,'a') as outfile:
@@ -421,7 +439,8 @@ def plotter(fromdat,filename, show = False):
 class Ministore(object):
     actual_dist = None
     actual_prob = None
-
+    actualsig_pos = None
+    actualsig_neg = None
     
     def __init__(self):
         self.rates = []
@@ -431,7 +450,9 @@ class Ministore(object):
     def getactual(self,dict1):
         self.actual_dist = np.array(dict1['Actual Distances'])
         self.actual_prob = np.array(dict1['Actual Probability'])
-
+        self.actualsig_pos = np.array(dict1['Actual Sigma +']) 
+        self.actualsig_neg = np.array(dict1['Actual Sigma -'])
+        
     def fill(self, lib, distance,sim_time):
         self.dist_list.append(distance)
         self.prob.append(lib['Probability to Alarm'])
@@ -439,7 +460,7 @@ class Ministore(object):
         if self.actual_dist is None:
             self.getactual(lib)
         # get rate for each call
-        self.rate = lib['Combined Hit Rate']
+        self.rates.append(lib['Combined Hit Rate'])
         
 # fills with data from multiple runs with probs at various distances.
 class Polistore(object):
@@ -448,6 +469,8 @@ class Polistore(object):
     channels_1 = [33,120,240,745]#from plimaster .inc email
     actual_dist = None
     actual_prob = None
+    actualsig_pos = None
+    actualsig_neg = None
 
     def __init__(self):
         self.rates1 = None
@@ -455,6 +478,7 @@ class Polistore(object):
         self.probs1 = None
         self.probs2 = None 
         self.channels = []        
+        self.ratesig1 = []
         
     def getchannels(self,dict1,dict2):
         self.channels = [
@@ -467,15 +491,18 @@ class Polistore(object):
     def getactual(self,dict1):
         self.actual_dist = np.array(dict1['Actual Distances'])
         self.actual_prob = np.array(dict1['Actual Probability'])
+        self.actualsig_pos = np.array(dict1['Actual Sigma +']) 
+        self.actualsig_neg = np.array(dict1['Actual Sigma -'])
     
     def fill(self, lib1, lib2, distance, simtime = None):
         self.dist_list.append(distance)
-
         self.getchannels(lib1,lib2)
-        # only load actual dists once 
+        self.ratesig1.append(lib1['Regular Background Sigma']) 
+        # only load actuals  once 
         if self.actual_dist is None:
             self.getactual(lib1)
-        # get probs for each call
+            
+        # get probs for each distance simulated 
         probability1 = np.array([
             lib1['Channel 1 Probability to Alarm'],
             lib1['Channel 2 Probability to Alarm'],

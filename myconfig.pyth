@@ -6,14 +6,38 @@
 #   [filepath]    [time]    [distance]
 #
 #-----------------Old runs
-#../post_template/source_451cm/451cm_source_20sec.dat    20  451
-#../post_template/source_488cm/488cm_20sec.dat    20  488 
-#../post_template/source-525cm/525cm_5core.dat   20  525
-#../post_template/source_563cm/20sec_563cm.dat   20  563
-
-
+../post_template/source_451cm/451cm_source_20sec.dat    20  451
+../post_template/source_488cm/488cm_20sec.dat    20  488 
+../post_template/source-525cm/525cm_5core.dat   20  525
+../post_template/source_563cm/20sec_563cm.dat   20  563
 #------------ New runs jun8
 /home/jcalderon/NewFolder/prd_scripts/jun8_prd_451-563cm_srce_rns/jun8_451cm_source_all_.dat    20  451
 /home/jcalderon/NewFolder/prd_scripts/jun8_prd_451-563cm_srce_rns/jun8_488cm_source_all_.dat    20  488
 /home/jcalderon/NewFolder/prd_scripts/jun8_prd_451-563cm_srce_rns/jun8_525cm_source_all_.dat    20  525
 /home/jcalderon/NewFolder/prd_scripts/jun8_prd_451-563cm_srce_rns/jun8_20sec__563cm_source_all_.dat 20  563
+#
+#
+#
+#
+#-----------New jun10 long distance runs for MINIRAD
+/home/jcalderon/NewFolder/prd_scripts/long_distdata/601cm_20sec_cae.dat	20	601  
+/home/jcalderon/NewFolder/prd_scripts/long_distdata/638cm_20sec_cae.dat	20	638 
+/home/jcalderon/NewFolder/prd_scripts/long_distdata/676cm_20sec_cae.dat	20	676 
+/home/jcalderon/NewFolder/prd_scripts/long_distdata/789cm_20sec_cae.dat	20	789 
+/home/jcalderon/NewFolder/prd_scripts/long_distdata/902cm_20sec_cae.dat	20	902 
+#
+#
+#
+/home/jcalderon/NewFolder/post_template/source_676cm/3sec_685cm.dat	3	685
+/home/jcalderon/NewFolder/post_template/source_789cm_new/20sec_789cm_40degres.dat   20  789
+/home/jcalderon/NewFolder/post_template/source_789cm/789cm_3sec.dat	3	789
+/home/jcalderon/NewFolder/post_template/source_902cm/3sec_902cm.dat	3	902
+/home/jcalderon/NewFolder/post_template/source_902cm_new/20sec_40degres_902.dat 20  902
+#----------------New superdata jun15
+/home/jcalderon/NewFolder/post_template/longdist_res_dat/20_all_secnores_789.dat    20  789
+/home/jcalderon/NewFolder/post_template/longdist_res_dat/20s_789_res.dat    20  789
+/home/jcalderon/NewFolder/post_template/longdist_res_dat/20sec_901_nres.dat 20  901
+/home/jcalderon/NewFolder/post_template/longdist_res_dat/20s_res_902cm.dat  20  902
+#
+#
+#

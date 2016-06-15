@@ -8,6 +8,8 @@ import matplotlib.pyplot as plt
 
 # requres a Polistore instance poli
 def plotpoli(poli, rate = False, prob = True):
+    err_xpos = poli.actualsig_pos
+    err_xneg = poli.actualsig_neg
     distances = np.array(poli.dist_list)
     exp_sec = 2
 
@@ -67,12 +69,14 @@ def plotpoli(poli, rate = False, prob = True):
         #x_ch3p1, y_ch3pb1 = aux.splinyplt(distances,ch3prob1)
         #x_ch4p1, y_ch4pb1 = aux.splinyplt(distances,ch4prob1)
         
-        plt.plot( poli.actual_dist[4:], poli.actual_prob[4:], marker = 'x', linewidth = '3',c = 'r', label = 'Actual Result')
+        all_errors = [err_xneg[4:], err_xpos[4:]]
+#        plt.errorbar(poli.actual_dist, poli.actual_prob,yerr=all_errors, marker = 'x', linewidth = '3', c = 'r', label = 'Actual Result')
+        plt.errorbar( poli.actual_dist[4:], poli.actual_prob[4:], yerr=all_errors, marker = 'x', linewidth = '3',c = 'r', label = 'Actual Result')
 
-        plt.plot(distances, ch1prob1 ,marker = 'o',linestyle = '-', label = 'Channel 1 :' +str(poli.channels[0]) +'kev - '+str(poli.channels[1]) + ' kev')
-        plt.plot(distances, ch2prob1, marker = 'o',linestyle = '-', label = 'Channel 2 : '+ str(poli.channels[1])+ ' kev - ' + str(poli.channels[2]) + ' kev')
-        plt.plot(distances, ch3prob1, marker = 'o',linestyle = '-', label = 'Channel 3 : '+ str(poli.channels[2])+ ' kev - ' + str(poli.channels[3])+ ' kev')
-        plt.plot(distances, ch4prob1, marker = 'o',linestyle = '-', label = 'Channel 4 : '+ str(poli.channels[0])+ ' kev - ' + str(poli.channels[3])+ ' kev')
+        plt.plot(distances, ch1prob1 ,marker = 'o', label = 'Channel 1 :' +str(poli.channels[0]) +'kev - '+str(poli.channels[1]) + ' kev')
+        plt.plot(distances, ch2prob1, marker = 'o', label = 'Channel 2 : '+ str(poli.channels[1])+ ' kev - ' + str(poli.channels[2]) + ' kev')
+        plt.plot(distances, ch3prob1, marker = 'o', label = 'Channel 3 : '+ str(poli.channels[2])+ ' kev - ' + str(poli.channels[3])+ ' kev')
+        plt.plot(distances, ch4prob1, marker = 'o', label = 'Channel 4 : '+ str(poli.channels[0])+ ' kev - ' + str(poli.channels[3])+ ' kev')
         plt.legend(loc=1, borderaxespad=0.,frameon = False)
         plt.show()
 
@@ -91,42 +95,48 @@ def plotpoli(poli, rate = False, prob = True):
         #x_ch2p2, y_ch2pb2 = splinyplt(distances,ch2prob2)
         #x_ch3p2, y_ch3pb2 = splinyplt(distances,ch3prob2)
         #x_ch4p2, y_ch4pb2 = splinyplt(distances,ch4prob2)
+        all_errors = [err_xneg, err_xpos]
+        plt.errorbar(poli.actual_dist, poli.actual_prob,yerr=all_errors, marker = 'x', linewidth = '3', c = 'r', label = 'Actual Result')
 
-        plt.plot(poli.actual_dist[4:], poli.actual_prob[4:], marker = 'x', linewidth = '3', c = 'r', label = 'Actual Result')
-
-        plt.plot( distances, ch1prob2,'-',marker = 'o', label = 'Channel 1 :' +str(poli.channels[0]) +'kev - '+str(poli.channels[1]) + ' kev')
-        plt.plot( distances, ch2prob2,'-',marker = 'o', label = 'Channel 2 : '+ str(poli.channels[1])+ ' kev - ' + str(poli.channels[2]) + ' kev')
-        plt.plot( distances, ch3prob2,'-',marker = 'o', label = 'Channel 3 : '+ str(poli.channels[2])+ ' kev - ' + str(poli.channels[3])+ ' kev')
-        plt.plot( distances, ch4prob2,'-',marker = 'o', label = 'Channel 4 : '+ str(poli.channels[0])+ ' kev - ' + str(poli.channels[3])+ ' kev')
-        plt.legend(loc=1, borderaxespad=0.,frameon = False)
+        plt.plot( distances, ch1prob2, marker = 'o', label = 'Channel 1 :' +str(poli.channels[0]) +'kev - '+str(poli.channels[1]) + ' kev')
+        plt.plot( distances, ch2prob2, marker = 'o', label = 'Channel 2 : '+ str(poli.channels[1])+ ' kev - ' + str(poli.channels[2]) + ' kev')
+        plt.plot( distances, ch3prob2, marker = 'o', label = 'Channel 3 : '+ str(poli.channels[2])+ ' kev - ' + str(poli.channels[3])+ ' kev')
+        plt.plot( distances, ch4prob2, marker = 'o', label = 'Channel 4 : '+ str(poli.channels[0])+ ' kev - ' + str(poli.channels[3])+ ' kev')
+        plt.legend(loc=1, borderaxespad=0., frameon = False)
         plt.show()
 
 # requires Ministore object whcih holds probs and rates of several runs
 def plotmini(mini, rate = False, prob = True):
-
+    err_xpos = mini.actualsig_pos
+    err_xneg = mini.actualsig_neg
     distances = np.array(mini.dist_list)
     rates = np.array(mini.rates)
     probs = np.array(mini.prob)
     exp_sec = 2
 
-    if rate:
+    if True:
         plt.figure() 
-        plt.title('Minirad D')
+        plt.title('Minirad D no res')
         plt.ylabel('Count Rate' )
         plt.xlabel('Distance CM' )
+        print(rates)
+        print(len(rates))
+
         plt.plot(distances, rates, label = 'minirad')
         plt.legend(loc=1, borderaxespad=0.,frameon = False)
         plt.show()
     if prob:
         plt.figure() 
-        plt.title('Polimaster\nProbability of Detection in Less Than '+str(exp_sec)+' Seconds')
+        plt.title('Minirad\nProbability of Detection in Less Than '+str(exp_sec)+' Seconds')
         plt.ylabel('Probability of Detection' )
         plt.xlabel('Distance CM From Ba133 Source' )
 
         prob2alrm = (1 - (1 - probs)**exp_sec ) 
 
-        plt.plot( mini.actual_dist, mini.actual_prob, marker = 'x', linewidth = '3', c = 'r', label = 'Actual Result')
-        plt.plot( distances, prob2alrm,'-', marker = 'o', label = 'Minirad')
+        all_errors = [err_xneg, err_xpos]
+        plt.errorbar( mini.actual_dist, mini.actual_prob, yerr=all_errors, marker = 'x', linewidth = '3', c = 'r', label = 'Actual Result')
+        plt.plot( distances, prob2alrm, 'o', label = 'Minirad')
+        plt.legend(loc=1, borderaxespad=0., frameon = False)
         plt.show()
 
 
